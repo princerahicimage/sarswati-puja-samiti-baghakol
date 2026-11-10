@@ -1,0 +1,1548 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<title>SARSWATI PUJA SAMITI - BAGHAKOL | Official Portal</title>
+<style>
+:root{--bg:#f8f5ee;--card:#ffffff;--ink:#241e17;--muted:#6b6255;--line:#e4dcd0;--saffron:#b85c16;--gold:#d49b28;--gold-dark:#9e6f10;--green:#1b6e41;--red:#b83226;--nav:#1f1a14}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{width:100%;min-height:100%;overflow-x:hidden;touch-action:manipulation}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,"Noto Sans Devanagari",system-ui,-apple-system,sans-serif;line-height:1.5}
+button,input,select,textarea{font:inherit}
+button{cursor:pointer;border:0;border-radius:10px;padding:10px 14px;background:var(--saffron);color:white;font-weight:650;transition:all .15s ease;min-height:44px;display:inline-flex;align-items:center;justify-content:center;gap:6px}
+button:active{transform:scale(0.98)}button:hover{opacity:.92}
+button.secondary{background:#eae2d4;color:#3b3226}button.success{background:var(--green);color:white}button.danger{background:var(--red)}button.small{padding:6px 10px;font-size:12px;min-height:34px}
+.app{display:flex;min-height:100vh}
+
+/* Sidebar Responsive Styling */
+.side{width:260px;background:var(--nav);color:#fff;padding:20px 14px;flex-shrink:0;display:flex;flex-direction:column;justify-content:space-between;box-shadow:4px 0 15px #0002}
+.brand{padding:8px 6px 16px;border-bottom:1px solid #3d352b;text-align:center}
+.brand-img{width:100%;max-width:200px;height:auto;border-radius:12px;border:2px solid var(--gold);box-shadow:0 4px 14px #0005}
+.brand h2{font-size:16px;margin:10px 0 2px;color:#f3e9d9;line-height:1.3}.brand p{color:#bfae99;font-size:11px;margin:0}
+.nav{margin-top:14px;display:grid;gap:3px}
+.nav button{background:transparent;color:#d5cbbe;text-align:left;font-weight:500;padding:12px 14px;border-radius:9px;display:flex;align-items:center;gap:12px;font-size:14px;width:100%;min-height:46px}
+.nav button.active,.nav button:hover{background:#3a3127;color:#fff;font-weight:600}
+.nav button i{font-style:normal;font-size:19px;width:24px;text-align:center;font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif}
+.sidefoot{font-size:11px;color:#9b8c7b;margin:15px 8px;text-align:center;border-top:1px solid #3d352b;padding-top:12px}
+
+.main{flex:1;min-width:0;display:flex;flex-direction:column}
+.top{min-height:64px;padding-top:calc(8px + env(safe-area-inset-top, 0px));padding-bottom:8px;padding-left:16px;padding-right:16px;background:rgba(255,255,255,0.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:50;box-shadow:0 2px 10px #00000010}
+.top strong{font-size:clamp(15px, 4vw, 18px);color:#2c2317}.top small{color:var(--muted)}
+.public-badge{background:#e8f4ec;color:var(--green);padding:4px 10px;border-radius:20px;font-size:11px;font-weight:600;display:inline-flex;align-items:center;gap:4px}
+.content{padding:clamp(14px, 4vw, 24px);padding-bottom:calc(65px + env(safe-area-inset-bottom, 0px));max-width:1400px;margin:0 auto;width:100%;box-sizing:border-box}
+.pagehead{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:18px;flex-wrap:wrap}
+.pagehead h1{font-size:clamp(18px, 5vw, 24px);margin:0 0 3px;color:#2c2317}.pagehead p{color:var(--muted);margin:0;font-size:12.5px}
+
+.banner-card{background:linear-gradient(135deg,#9c4309,#d4821a);color:#fff;border-radius:16px;padding:16px 20px;margin-bottom:20px;box-shadow:0 6px 20px #b85c1625;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.banner-card img{width:75px;height:75px;border-radius:12px;object-fit:cover;border:2px solid #ffe6a3;flex-shrink:0}
+.banner-card h2{margin:0 0 4px;font-size:clamp(18px, 4.5vw, 22px)}.banner-card p{margin:0;opacity:.92;font-size:12.5px;line-height:1.4}
+
+/* Responsive Grid System */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.stat,.panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;box-shadow:0 2px 10px #241e1708}
+.stat label{color:var(--muted);font-size:12px;font-weight:600}.stat h2{font-size:clamp(20px, 6vw, 26px);margin:6px 0 2px;color:#2c2317}.stat small{color:var(--muted);font-size:11px}
+.stat .ico{float:right;background:#fbf3e6;padding:8px 10px;border-radius:10px;font-size:22px;font-family:"Apple Color Emoji","Segoe UI Emoji","Noto Color Emoji",sans-serif}
+.sectiongrid{display:grid;grid-template-columns:1.3fr 1fr;gap:14px;margin-top:14px}
+.panel h3{font-size:15px;margin:0 0 12px;color:#33291d;display:flex;justify-content:space-between;align-items:center}
+.muted{color:var(--muted)}
+
+/* Notice Card Styling */
+.notice-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;margin-bottom:16px;box-shadow:0 3px 12px rgba(36,30,23,0.06)}
+.notice-card .notice-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;flex-wrap:wrap;gap:6px}
+.notice-card h3{margin:0 0 6px;color:#b85c16;font-size:clamp(16px, 4.5vw, 19px)}
+.notice-card p{margin:0 0 12px;font-size:13.5px;line-height:1.6;color:#3a3126;white-space:pre-wrap}
+.notice-media-img{width:100%;max-height:400px;object-fit:cover;border-radius:12px;border:1px solid var(--line);margin:10px 0}
+.notice-pdf-box{background:#fdf6e7;border:1px dashed var(--gold);border-radius:10px;padding:12px;display:flex;align-items:center;justify-content:space-between;margin:10px 0;gap:10px}
+
+/* Touch-Friendly Tables with Pan Scroll */
+.tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch;touch-action:pan-x pan-y;border-radius:10px;border:1px solid var(--line);margin-bottom:12px}
+table{width:100%;border-collapse:collapse;font-size:13px;min-width:550px}
+th{text-align:left;color:var(--muted);font-weight:600;background:#faf7f0;padding:11px 12px;border-bottom:1px solid var(--line)}
+td{padding:11px 12px;border-bottom:1px solid var(--line);white-space:nowrap}tr:last-child td{border-bottom:0}
+.empty{text-align:center;padding:26px;color:var(--muted)}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}.toolbar input,.toolbar select{flex:1;min-width:180px}
+.fieldgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.field{display:grid;gap:4px}.field.full{grid-column:1/-1}.field label{font-size:12px;color:#52483b;font-weight:650}
+.field input,.field select,.field textarea,.toolbar input,.toolbar select{width:100%;border:1px solid #d8cfc2;border-radius:8px;padding:10px 11px;background:#fff;color:var(--ink);outline:none;font-size:13.5px;min-height:44px}
+.field textarea{min-height:75px;resize:vertical}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--gold)}
+.actions{display:flex;gap:8px;justify-content:flex-end;margin-top:16px;flex-wrap:wrap}
+
+/* Responsive Modal Dialog */
+.modal{position:fixed;inset:0;background:#140f0aa3;display:none;align-items:center;justify-content:center;padding:12px;z-index:200;backdrop-filter:blur(2px)}
+.modal.show{display:flex}.dialog{background:#fff;border-radius:16px;width:min(760px,96vw);max-height:92vh;overflow-y:auto;padding:20px;box-shadow:0 10px 30px #0004}
+.dialoghead{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;position:sticky;top:0;background:#fff;z-index:5;padding-bottom:10px;border-bottom:1px solid var(--line)}
+.dialoghead h2{font-size:17px;margin:0}
+.close{background:#eae2d4;color:#333;padding:6px 12px;border-radius:8px;font-size:16px;min-height:36px}
+.pill{display:inline-flex;align-items:center;gap:4px;padding:4px 9px;border-radius:20px;background:#e3f2fd;color:#0d47a1;font-size:11px;font-weight:600}
+.pill.green{background:#e8f5e9;color:#1b5e20}.pill.orange{background:#fff3e0;color:#e65100}.pill.red{background:#ffebee;color:#b71c1c}
+.progress{height:9px;background:#eae2d4;border-radius:20px;overflow:hidden}.progress i{display:block;height:100%;background:var(--gold)}
+
+/* ROYAL HERITAGE ULTRA-PROFESSIONAL CERTIFICATE STYLING */
+.cert-preview-container{width:100%;overflow-x:auto;padding:6px}
+.cert-preview{background:linear-gradient(135deg,#fffdf8 0%,#fdf6e7 100%);border:12px double #c4922f;outline:2px solid #8f3d04;outline-offset:-8px;padding:clamp(20px, 6vw, 36px);text-align:center;color:#3a2914;position:relative;margin:auto;box-shadow:0 10px 35px rgba(0,0,0,0.18);min-width:320px;border-radius:6px}
+.cert-preview .header-logo{width:clamp(85px, 20vw, 115px);height:clamp(85px, 20vw, 115px);border-radius:50%;border:4px solid #c4922f;margin:0 auto 10px;object-fit:cover;box-shadow:0 6px 16px rgba(184,92,22,0.25)}
+.cert-preview h2{font-size:clamp(20px, 5.5vw, 28px);color:#a8540c;margin:4px 0 2px;font-family:"Noto Sans Devanagari",serif;font-weight:800;letter-spacing:0.5px}
+.cert-preview .location{font-size:clamp(12px, 3.5vw, 14.5px);color:#664d26;font-weight:700;letter-spacing:0.8px;margin-bottom:12px}
+.cert-preview .divider{height:3px;background:linear-gradient(90deg,transparent,#c4922f,#8f3d04,#c4922f,transparent);margin:12px auto;width:90%;border-radius:2px}
+.cert-preview .cert-subtitle{font-size:clamp(12px, 3.2vw, 14px);letter-spacing:2px;color:#8a601e;text-transform:uppercase;font-weight:800}
+.cert-preview .certtitle{font-size:clamp(22px, 6.5vw, 32px);color:#8f3d04;margin:12px 0;font-weight:800;text-decoration:underline;text-decoration-color:#e0b253;text-underline-offset:6px;font-family:"Noto Sans Devanagari",serif}
+.cert-preview .blessing{font-size:clamp(13px, 3.5vw, 14.5px);line-height:1.8;color:#4a381d;margin:12px 0}
+.cert-preview .donor-box{background:#fff8eb;border:1.5px dashed #d9a236;border-radius:12px;padding:16px;margin:16px auto;max-width:580px;text-align:left;font-size:clamp(13.5px, 4vw, 15.5px);line-height:2.0;box-shadow:inset 0 0 10px rgba(196,146,47,0.08)}
+.cert-preview .verification-seal{display:inline-flex;align-items:center;gap:6px;background:#e8f5e9;border:1.5px solid #81c784;color:#1b5e20;padding:6px 14px;border-radius:25px;font-size:11.5px;font-weight:700;margin:10px 0;box-shadow:0 2px 8px rgba(27,94,32,0.12)}
+.cert-preview .signrow{display:flex;justify-content:space-between;margin-top:30px;font-size:clamp(11px, 3.2vw, 13px);color:#44341e}
+.cert-preview .signrow div{text-align:center;width:31%}
+
+/* AI Chat Styling */
+.ai-card{background:linear-gradient(135deg,#1f1a14,#3b2d1d);color:#fff;border-radius:16px;padding:20px;margin-bottom:18px;box-shadow:0 8px 25px #0003}
+.ai-card h2{color:#f5d796;margin:0 0 6px;font-size:20px;display:flex;align-items:center;gap:8px}
+.ai-chat-box{background:#2a231b;border:1px solid #4a3d2e;border-radius:12px;padding:14px;max-height:350px;overflow-y:auto;margin:12px 0;display:flex;flex-direction:column;gap:10px}
+.chat-msg{padding:10px 14px;border-radius:12px;font-size:13.5px;line-height:1.6;max-width:85%}
+.chat-msg.user{background:#b85c16;color:#fff;align-self:flex-end;border-bottom-right-radius:2px}
+.chat-msg.ai{background:#3d3327;color:#f3e8d7;align-self:flex-start;border-bottom-left-radius:2px;border:1px solid #574836}
+
+/* Backdrop Overlay for Mobile Drawer */
+.sidebar-overlay{display:none;position:fixed;inset:0;background:#0006;z-index:80;backdrop-filter:blur(1px)}
+.sidebar-overlay.show{display:block}
+
+.hide{display:none!important}.mobilemenu{display:none}
+
+/* Media Queries */
+@media(max-width:960px){
+ .side{width:230px}
+ .sectiongrid{grid-template-columns:1fr}
+ .grid{grid-template-columns:repeat(2,1fr)}
+}
+
+@media(max-width:720px){
+ .side{position:fixed;left:-280px;top:0;bottom:0;z-index:95;transition:left .25s ease-in-out}
+ .side.open{left:0}
+ .mobilemenu{display:inline-flex;padding:6px 10px;min-height:40px;font-size:20px}
+ .top{padding-left:12px;padding-right:12px}
+ .content{padding:12px;padding-bottom:calc(60px + env(safe-area-inset-bottom, 0px))}
+ .grid{grid-template-columns:1fr 1fr;gap:10px}
+ .fieldgrid{grid-template-columns:1fr}
+ .banner-card{padding:14px;gap:12px}
+ .banner-card img{width:60px;height:60px}
+ .actions button{width:100%}
+}
+
+@media(max-width:420px){
+ .grid{grid-template-columns:1fr}
+ .top strong{max-width:160px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+}
+
+@media print{
+ body{background:white}.side,.top,.content > :not(#view),.modal .dialoghead,.no-print,.sidebar-overlay{display:none!important}
+ .modal{display:block!important;position:static;background:white;padding:0}.dialog{display:block;box-shadow:none;padding:0;width:100%}
+ .cert-preview{display:block!important;border:10px double #c4922f;padding:18mm 10mm;page-break-inside:avoid}
+ @page{size:A4 portrait;margin:8mm}
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar-overlay" id="sidebarOverlay" onclick="closeSidebar()"></div>
+
+<div class="app">
+<aside class="side" id="sidebar">
+ <div>
+  <div class="brand">
+   <img src="assets/samiti_logo.png" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'><rect width=\'100\' height=\'100\' fill=\'%23b85c16\'/><text x=\'50\' y=\'60\' font-size=\'45\' text-anchor=\'middle\' fill=\'%23fff\'>🛕</text></svg>';" class="brand-img" alt="मंदिर समिति लोगो">
+   <h2>SARSWATI PUJA SAMITI</h2>
+   <p>BAGHAKOL • BELA BIGHA</p>
+  </div>
+  <nav class="nav" id="nav">
+   <button class="active" data-page="dashboard"><i>▦</i> डैशबोर्ड</button>
+   <button id="donationsNavBtn" data-page="donations"><i>🙏</i> चंदा / दान रजिस्टर</button>
+   <button data-page="certificates"><i>🏅</i> आभार प्रमाणपत्र</button>
+   <button id="expensesNavBtn" data-page="expenses"><i>₹</i> खर्च एवं भुगतान</button>
+   <button data-page="construction"><i>🏗</i> निर्माण कार्य</button>
+   <button data-page="committee"><i>👥</i> समिति सदस्य</button>
+   <button data-page="meetings"><i>▤</i> बैठक रिकॉर्ड</button>
+   <button id="communityNavBtn" data-page="community"><i>📢</i> समुदाय व सूचनाएं</button>
+   <button id="aiAnalyticsNavBtn" data-page="aiAnalytics"><i>🤖</i> AI एनालिटिक्स</button>
+   <button id="reportsNavBtn" data-page="reports"><i>▥</i> रिपोर्ट व बैकअप</button>
+   <button data-page="settings"><i>⚙</i> मंदिर सेटिंग</button>
+  </nav>
+ </div>
+ <div class="sidefoot">आधिकारिक प्रबंधन पोर्टल • v2.0<br><span id="userRoleBadge" style="color:#d49b28;font-weight:bold"></span></div>
+</aside>
+
+<main class="main">
+ <header class="top">
+  <div style="display:flex;align-items:center;gap:10px">
+   <button class="mobilemenu secondary" onclick="toggleSidebar()">☰</button>
+   <strong id="topTitle">डैशबोर्ड</strong>
+   <span id="publicBadge" class="public-badge hide">🌐 सार्वजनिक दृश्य</span>
+  </div>
+  <div style="display:flex;align-items:center;gap:8px">
+   <small id="today" style="display:none"></small>
+   <button id="authToggleBtn" class="secondary small" onclick="handleAuthToggle()">लॉगिन</button>
+  </div>
+ </header>
+ <div class="content" id="view"></div>
+</main>
+</div>
+
+<!-- Authentication Gate -->
+<div id="authGate" style="position:fixed;inset:0;background:#f8f5ee;z-index:300;display:flex;align-items:center;justify-content:center;padding:14px;overflow-y:auto">
+ <div style="background:#fff;border:1px solid #e4dcd0;border-radius:20px;padding:clamp(16px, 4vw, 26px);width:min(460px,100%);box-shadow:0 12px 40px #241e1718;text-align:center;margin:auto">
+  <img src="assets/samiti_logo.png" onerror="this.onerror=null;this.style.display='none';" style="width:110px;height:110px;border-radius:15px;border:3px solid var(--gold);object-fit:cover;margin-bottom:10px" alt="समिति लोगो">
+  <h2 style="margin:4px 0;color:#b85c16;font-size:clamp(18px, 5vw, 22px)">मंदिर निर्माण समिति</h2>
+  <p style="color:#6b6255;font-size:12.5px;margin:0 0 14px">बाघाकोल (बेला बिगहा) · Cloud Management System</p>
+
+  <div id="authMessage" class="notice" style="text-align:left">समिति के अधिकृत सदस्य या सामान्य यूज़र लॉगिन करें।</div>
+
+  <div class="field" style="text-align:left;margin:10px 0"><label>ईमेल (Email)</label><input id="authEmail" type="email" placeholder="user@example.com"></div>
+  <div class="field" style="text-align:left;margin:10px 0"><label>पासवर्ड (Password)</label><input id="authPassword" type="password" placeholder="कम-से-कम 8 अक्षर"></div>
+
+  <div style="display:grid;gap:8px;margin-top:14px">
+   <button id="loginBtn" onclick="signInCloud()">🔒 लॉगिन करें</button>
+   <button class="secondary" onclick="enterPublicMode()">🌐 बिना लॉगिन सार्वजनिक विवरण देखें (Public View)</button>
+   <button class="secondary" style="font-size:12px;min-height:36px" onclick="signUpCloud()">✨ नया यूजर अकाउंट बनाएं (Sign Up)</button>
+   <button class="secondary" style="font-size:12px;min-height:36px" onclick="resetPasswordCloud()">पासवर्ड रीसेट करें</button>
+  </div>
+ </div>
+</div>
+
+<div class="modal" id="modal"><div class="dialog"><div class="dialoghead"><h2 id="modalTitle"></h2><button class="close" onclick="closeModal()">✕</button></div><div id="modalBody"></div></div></div>
+
+<script src="portal-config.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+<script>
+// Supabase organization and isolated client-side caches.
+const MAIN_ORG_ID = '2cd73205-da29-4844-a67e-76dca9bce645';
+const ADMIN_CACHE_KEY = 'devi_mandir_admin_cache_v21';
+const PUBLIC_CACHE_KEY = 'devi_mandir_public_cache_v21';
+const LEGACY_CACHE_KEY = 'devi_mandir_master_cache_v20';
+const MY_SUBMISSIONS_KEY = 'devi_mandir_my_submissions_v11';
+const DEFAULT_DB = Object.freeze({
+ donations: [], expenses: [], works: [], members: [], meetings: [], certificates: [], notices: [],
+ settings: { temple: 'देवी मंदिर निर्माण समिति', place: 'बाघाकोल (बेला बिगहा)', president: '', secretary: '', treasurer: '', phone: '', address: '', goal: 500000, adminEmails: [] }
+});
+const emptyDb = () => JSON.parse(JSON.stringify(DEFAULT_DB));
+let db = emptyDb();
+let cloud = null, currentUser = null;
+let isPublicMode = true, userRole = 'public';
+let pendingSubmissions = [];
+let cloudSaveInProgress = false;
+
+function isAdminSession() { return !!currentUser && !isPublicMode && userRole === 'admin'; }
+function requireAdminAction() {
+ if (!isAdminSession()) { alert('यह कार्य केवल Supabase में अधिकृत समिति एडमिन कर सकता है।'); return false; }
+ return true;
+}
+function loadLocalCache() {
+ const key = isPublicMode ? PUBLIC_CACHE_KEY : ADMIN_CACHE_KEY;
+ try {
+  const raw = localStorage.getItem(key);
+  db = raw ? { ...emptyDb(), ...JSON.parse(raw) } : emptyDb();
+ } catch (e) { db = emptyDb(); }
+}
+function resetPublicMemory() {
+ db = emptyDb();
+ pendingSubmissions = [];
+ try { localStorage.removeItem(ADMIN_CACHE_KEY); localStorage.removeItem(LEGACY_CACHE_KEY); } catch (e) {}
+ loadLocalCache();
+}
+
+const titles = {
+ dashboard: 'डैशबोर्ड', donations: 'चंदा / दान रजिस्टर', certificates: 'आभार प्रमाणपत्र',
+ expenses: 'खर्च एवं भुगतान', construction: 'निर्माण कार्य प्रगति', committee: 'समिति सदस्य',
+ meetings: 'बैठक रिकॉर्ड', community: '📢 समुदाय व सूचनाएं', aiAnalytics: '🤖 AI एनालिटिक्स', reports: 'रिपोर्ट व बैकअप', settings: 'मंदिर सेटिंग'
+};
+
+const money = n => '₹' + Number(n || 0).toLocaleString('en-IN', { maximumFractionDigits: 2 });
+const today = () => new Date().toISOString().slice(0, 10);
+const fmt = d => d ? new Date(d + 'T00:00:00').toLocaleDateString('hi-IN', { day: 'numeric', month: 'short', year: 'numeric' }) : '—';
+const safe = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const id = prefix => prefix + '-' + Date.now().toString().slice(-7);
+
+// ONLY VERIFIED DONATIONS COUNT TOWARDS REVENUE / COLLECTION
+const totalVerified = (arr, key) => (arr || []).filter(x => x.verified && !x.rejected).reduce((s, x) => s + Number(x[key] || 0), 0);
+const total = (arr, key) => (arr || []).reduce((s, x) => s + Number(x[key] || 0), 0);
+
+function toggleSidebar() {
+ document.getElementById('sidebar').classList.toggle('open');
+ document.getElementById('sidebarOverlay').classList.toggle('show');
+}
+function closeSidebar() {
+ document.getElementById('sidebar').classList.remove('open');
+ document.getElementById('sidebarOverlay').classList.remove('show');
+}
+
+// 100% ACCURATE HINDI NUMBER TO WORDS CONVERTER
+function numToHindiWords(n) {
+ n = Math.floor(Number(n || 0));
+ if (n <= 0) return 'शून्य रुपये मात्र';
+
+ const ones = ['', 'एक', 'दो', 'तीन', 'चार', 'पांच', 'छह', 'सात', 'आठ', 'नौ', 'दस',
+  'ग्यारह', 'बारह', 'तेरह', 'चौदह', 'पबंध', 'सोलह', 'सत्रह', 'अठारह', 'उन्नीस', 'बीस',
+  'इक्कीस', 'बाईस', 'तेईस', 'चौबीस', 'पच्चीस', 'छब्बीस', 'सत्ताईस', 'अट्ठाईस', 'उनतीस', 'तीस',
+  'इकतीस', 'बत्तीस', 'तैंतीस', 'चौंतीस', 'पैंतीस', 'छत्तीस', 'सैंतीस', 'अड़तीस', 'उनतालीस', 'चालिस',
+  'इकतालीस', 'बयालीस', 'तैंतालीस', 'चौंतालीस', 'पैंतालीस', 'छियालीस', 'सैंतालीस', 'अड़तालीस', 'उंचास', 'पचास',
+  'इक्यावन', 'बावन', 'तिर्पन', 'चौवन', 'पचपन', 'छप्पन', 'संतावन', 'अठावन', 'उनसठ', 'साठ',
+  'इक्सठ', 'बासठ', 'तिरसठ', 'चौंसठ', 'पैंसठ', 'छियासठ', 'सरसठ', 'अड़सठ', 'उनहत्तर', 'सत्तर',
+  'इकहत्तर', 'बहत्तर', 'तिहत्तर', 'चौहत्तर', 'पचहत्तर', 'छिहत्तर', 'सतहत्तर', 'अठहत्तर', 'उन्यासी', 'अस्सी',
+  'इक्यासी', 'बयासी', 'तिरासी', 'चौरासी', 'पचासी', 'छियासी', 'सत्तासी', 'अट्ठासी', 'नवासी', 'नब्बे',
+  'इक्यानाबे', 'बानवे', 'तिरानाबे', 'चौरानाबे', 'पचानवे', 'छियानवे', 'संतानवे', 'अट्ठानवे', 'निन्यानवे'];
+
+ function convertTwoDigit(num) {
+  return ones[num] || '';
+ }
+
+ let str = '';
+ if (n >= 10000000) {
+  let crore = Math.floor(n / 10000000);
+  str += convertTwoDigit(crore) + ' करोड़ ';
+  n %= 10000000;
+ }
+ if (n >= 100000) {
+  let lakh = Math.floor(n / 100000);
+  str += convertTwoDigit(lakh) + ' लाख ';
+  n %= 100000;
+ }
+ if (n >= 1000) {
+  let thousand = Math.floor(n / 1000);
+  str += convertTwoDigit(thousand) + ' हजार ';
+  n %= 1000;
+ }
+ if (n >= 100) {
+  let hundred = Math.floor(n / 100);
+  str += ones[hundred] + ' सौ ';
+  n %= 100;
+ }
+ if (n > 0) {
+  str += convertTwoDigit(n) + ' ';
+ }
+ return str.trim() + ' रुपये मात्र';
+}
+
+// Whitelist-only public projection. Private donor/expense/member fields never leave app_state.
+function createSanitizedPublicProjection() {
+ const donations = (db.donations || [])
+  .filter(d => d.verified === true && d.rejected !== true && d.public_approved === true)
+  .map(d => ({
+   id: d.id, receipt: d.receipt, name: d.name, amount: Number(d.amount || 0), date: d.date,
+   method: d.method || '', verified: true, verifiedAt: d.verifiedAt || null,
+   verificationId: d.verificationId || ''
+  }));
+ const expenses = (db.expenses || [])
+  .filter(x => x.public_approved === true)
+  .map(x => ({ id: x.id, date: x.date, description: x.description, amount: Number(x.amount || 0), category: x.category || '', method: x.method || '' }));
+ const works = (db.works || []).map(w => ({ name: w.name, status: w.status, progress: Math.max(0, Math.min(100, Number(w.progress || 0))) }));
+ const members = (db.members || []).map(m => ({ name: m.name, role: m.role, phone: m.public_contact === true ? (m.phone || '') : '' }));
+ const meetings = (db.meetings || []).filter(m => m.published === true).map(m => ({ date: m.date, place: m.place || '', decisions: m.decisions || '', next: m.next || '' }));
+ const notices = (db.notices || []).filter(n => n.public_approved === true).map(n => ({ id: n.id, title: n.title, category: n.category, date: n.date, content: n.content }));
+ return {
+  donations, expenses, works, members, meetings, notices,
+  certificates: donations.map(d => ({ id: d.id, receipt: d.receipt, name: d.name, amount: d.amount, date: d.date, verified: true, verificationId: d.verificationId })),
+  settings: { temple: db.settings?.temple || 'मंदिर निर्माण समिति', place: db.settings?.place || 'बाघाकोल (बेला बिगहा)', goal: Number(db.settings?.goal || 0) }
+ };
+}
+
+// Save the complete private record first, then publish only the safe projection.
+async function saveNow() {
+ if (!cloud) { showCloudStatus('Cloud connection उपलब्ध नहीं है।', true); return false; }
+ if (!requireAdminAction()) return false;
+ if (cloudSaveInProgress) { showCloudStatus('सेव प्रक्रिया पहले से चल रही है…'); return false; }
+ cloudSaveInProgress = true;
+ try {
+  const projection = createSanitizedPublicProjection();
+  // One server-side PostgreSQL RPC commits private + public state atomically.
+  const { error: saveErr } = await cloud.rpc('admin_save_states', {
+   _org_id: MAIN_ORG_ID,
+   _private_data: db,
+   _public_data: projection
+  });
+  if (saveErr) throw new Error('Cloud डेटा सेव नहीं हुआ: ' + saveErr.message);
+
+  try { localStorage.setItem(ADMIN_CACHE_KEY, JSON.stringify(db)); } catch (e) {}
+  showCloudStatus('✔ निजी डेटा और स्वीकृत सार्वजनिक विवरण Cloud में सेव हुए');
+  return true;
+ } catch (e) {
+  showCloudStatus('Cloud Save Error: ' + e.message, true);
+  return false;
+ } finally { cloudSaveInProgress = false; }
+}
+
+function save() {
+ return saveNow();
+}
+
+function showCloudStatus(msg, isError = false) {
+ let el = document.getElementById('cloudStatus'); if (!el) return;
+ el.textContent = msg; el.style.color = isError ? '#b83226' : '#1b6e41';
+}
+
+// UNIFIED REALTIME FETCH ENGINE - EVERY DEVICE READS MASTER PUBLIC_STATE FROM SUPABASE
+async function fetchLatestCloudState() {
+ if (!cloud || cloudSaveInProgress) return;
+ try {
+  const tableName = isAdminSession() ? 'app_state' : 'public_state';
+  const { data: res, error } = await cloud.from(tableName).select('data,updated_at').eq('org_id', MAIN_ORG_ID).maybeSingle();
+  if (error) throw error;
+  // Never fall back from a failed public fetch to an Admin cache or in-memory private state.
+  const incoming = res?.data && typeof res.data === 'object' ? res.data : emptyDb();
+  const next = { ...emptyDb(), ...incoming };
+  const oldStr = JSON.stringify(db), newStr = JSON.stringify(next);
+  if (oldStr !== newStr) {
+   db = next;
+   const cacheKey = isAdminSession() ? ADMIN_CACHE_KEY : PUBLIC_CACHE_KEY;
+   try { localStorage.setItem(cacheKey, JSON.stringify(db)); } catch (e) {}
+   renderActiveView();
+  }
+  if (isAdminSession()) showCloudStatus('✔ निजी Cloud Sync सफल');
+  else showCloudStatus('✔ सार्वजनिक जानकारी सिंक हुई');
+ } catch (e) {
+  showCloudStatus('Cloud Sync Error: ' + e.message, true);
+  if (!isAdminSession()) { db = emptyDb(); try { localStorage.removeItem(PUBLIC_CACHE_KEY); } catch (_) {} renderActiveView(); }
+ }
+}
+
+async function fetchPendingDonationSubmissions() {
+ if (!isAdminSession() || !cloud) { pendingSubmissions = []; return; }
+ const { data, error } = await cloud.from('donation_submissions')
+  .select('id,receipt,donor_name,amount,donor_address,donor_phone,donation_date,payment_method,transaction_ref,note,status,created_at')
+  .eq('org_id', MAIN_ORG_ID).eq('status', 'pending').order('created_at', { ascending: false });
+ if (error) throw error;
+ pendingSubmissions = data || [];
+}
+
+function renderActiveView() {
+ let modalEl = document.getElementById('modal');
+ let isModalOpen = modalEl && modalEl.classList.contains('show');
+ if (!isModalOpen) {
+  let activePage = document.querySelector('#nav button.active')?.dataset?.page || 'dashboard';
+  page(activePage, false);
+ }
+}
+
+async function initCloud() {
+ try {
+  if (!window.MANDIR_CONFIG || !MANDIR_CONFIG.SUPABASE_URL || MANDIR_CONFIG.SUPABASE_URL.includes('YOUR_')) {
+   document.getElementById('authMessage').textContent = 'कृपया www/config.js में अपना Supabase URL और Key दर्ज करें।';
+   return;
+  }
+  cloud = window.supabase.createClient(MANDIR_CONFIG.SUPABASE_URL, MANDIR_CONFIG.SUPABASE_ANON_KEY);
+
+  setInterval(fetchLatestCloudState, 10000);
+
+  const { data: { session } } = await cloud.auth.getSession();
+  if (session) await afterLogin(session.user);
+  else enterPublicMode();
+
+  cloud.auth.onAuthStateChange((event, session) => {
+   if (event === 'SIGNED_OUT') {
+    currentUser = null; userRole = 'public';
+    enterPublicMode();
+   }
+  });
+ } catch (e) { document.getElementById('authMessage').textContent = 'कनेक्शन नोटिस: ' + e.message; }
+}
+
+async function signInCloud() {
+ const email = document.getElementById('authEmail').value.trim(), password = document.getElementById('authPassword').value;
+ if (!email || !password) return authMsg('ईमेल और पासवर्ड भरें।');
+ const { data, error } = await cloud.auth.signInWithPassword({ email, password });
+ if (error) return authMsg('लॉगिन विफल: ' + error.message);
+ isPublicMode = false;
+ await afterLogin(data.user);
+}
+
+async function signUpCloud() {
+ const email = document.getElementById('authEmail').value.trim();
+ const password = document.getElementById('authPassword').value;
+ if (!email || password.length < 8) return authMsg('ईमेल और कम-से-कम 8 अक्षरों का पासवर्ड भरें।');
+ authMsg('अकाउंट बनाया जा रहा है…');
+ const { data, error } = await cloud.auth.signUp({ email, password });
+ if (error) return authMsg('साइन-अप विफल: ' + error.message);
+ if (!data?.session || !data?.user) return authMsg('अकाउंट बन गया है। पहले Email Verification पूरा करें, फिर लॉगिन करें।');
+ await afterLogin(data.user);
+}
+
+async function resetPasswordCloud() {
+ const email = document.getElementById('authEmail').value.trim(); if (!email) return authMsg('पहले ईमेल भरें।');
+ const { error } = await cloud.auth.resetPasswordForEmail(email);
+ authMsg(error ? error.message : 'पासवर्ड रीसेट ईमेल भेज दिया गया है।');
+}
+
+function authMsg(msg) { document.getElementById('authMessage').textContent = msg; }
+
+async function afterLogin(user) {
+ currentUser = user;
+ userRole = 'user';
+ isPublicMode = true;
+ // Fail closed: an email or editable adminEmails value never grants Admin access.
+ const { data: membership, error } = await cloud.from('memberships')
+  .select('role').eq('org_id', MAIN_ORG_ID).eq('user_id', user.id).maybeSingle();
+ if (error) {
+  currentUser = null;
+  authMsg('Membership सत्यापन नहीं हो सका: ' + error.message + '. सुरक्षा के लिए Public View खोला जाएगा।');
+ } else if (membership?.role === 'admin') {
+  userRole = 'admin';
+  isPublicMode = false;
+ }
+ if (isAdminSession()) {
+  // Migrate legacy mixed cache only after server-side Admin membership is confirmed.
+  try {
+   if (!localStorage.getItem(ADMIN_CACHE_KEY)) {
+    const legacy = localStorage.getItem(LEGACY_CACHE_KEY);
+    if (legacy) localStorage.setItem(ADMIN_CACHE_KEY, legacy);
+   }
+   localStorage.removeItem(LEGACY_CACHE_KEY);
+  } catch (e) {}
+  document.getElementById('userRoleBadge').textContent = '👑 भूमिका: समिति एडमिन';
+  loadLocalCache();
+ } else {
+  resetPublicMemory();
+  document.getElementById('userRoleBadge').textContent = '👤 भूमिका: सामान्य दर्शक';
+ }
+ document.querySelectorAll('#nav button').forEach(b => b.classList.remove('hide'));
+ document.getElementById('authGate').style.display = 'none';
+ document.getElementById('publicBadge').classList.toggle('hide', isAdminSession());
+ document.getElementById('authToggleBtn').textContent = 'Logout';
+ if (!document.getElementById('cloudStatus')) {
+  const el = document.createElement('span'); el.id = 'cloudStatus';
+  el.style.cssText = 'font-size:11px;margin-left:10px;color:#1b6e41';
+  document.querySelector('.top > div').appendChild(el);
+ }
+ await fetchLatestCloudState();
+ page('dashboard');
+}
+
+async function enterPublicMode() {
+ currentUser = null;
+ userRole = 'public';
+ isPublicMode = true;
+ resetPublicMemory();
+ document.querySelectorAll('#nav button').forEach(b => b.classList.remove('hide'));
+ document.getElementById('authGate').style.display = 'none';
+ document.getElementById('publicBadge').classList.remove('hide');
+ document.getElementById('authToggleBtn').textContent = '🔒 लॉगिन';
+ document.getElementById('userRoleBadge').textContent = '🌐 सार्वजनिक दर्शक';
+ await fetchLatestCloudState();
+ page('dashboard');
+}
+
+function handleAuthToggle() {
+ if (isPublicMode || !currentUser) {
+  document.getElementById('authGate').style.display = 'flex';
+ } else {
+  cloud.auth.signOut();
+ }
+}
+
+// HARDWARE BACK BUTTON OVERRIDE FOR ANDROID CAPACITOR
+let navHistory = ['dashboard'];
+
+function page(p, pushHistory = true) {
+ document.querySelectorAll('#nav button').forEach(b => b.classList.toggle('active', b.dataset.page === p));
+ document.getElementById('topTitle').textContent = titles[p] || 'डैशबोर्ड';
+ closeSidebar();
+
+ if (pushHistory && navHistory[navHistory.length - 1] !== p) {
+  navHistory.push(p);
+  try { window.history.pushState({ page: p }, ""); } catch(e){}
+ }
+ const views = { dashboard, donations, certificates, expenses, construction, committee, meetings, community, aiAnalytics, reports, settings };
+ (views[p] || dashboard)();
+}
+
+document.getElementById('nav').addEventListener('click', e => {
+ let b = e.target.closest('button[data-page]');
+ if (b) page(b.dataset.page);
+});
+
+function openModal(title, body) {
+ document.getElementById('modalTitle').textContent = title;
+ document.getElementById('modalBody').innerHTML = body;
+ document.getElementById('modal').classList.add('show');
+ try { window.history.pushState({ modal: true }, ""); } catch(e){}
+}
+
+function closeModal(popHistory = true) {
+ document.getElementById('modal').classList.remove('show');
+ if (popHistory && window.history.state && window.history.state.modal) {
+  try { window.history.back(); } catch(e){}
+ }
+}
+
+function handleBackNavigation(fromHardware = false) {
+ let modalEl = document.getElementById('modal');
+ if (modalEl && modalEl.classList.contains('show')) {
+  closeModal(false);
+  return true;
+ }
+ let sidebarEl = document.getElementById('sidebar');
+ if (sidebarEl && sidebarEl.classList.contains('open')) {
+  closeSidebar();
+  return true;
+ }
+ if (navHistory.length > 1) {
+  navHistory.pop();
+  let prevPage = navHistory[navHistory.length - 1] || 'dashboard';
+  page(prevPage, false);
+  return true;
+ }
+ page('dashboard', false);
+ if (fromHardware) {
+  if (confirm('क्या आप मंदिर प्रबंधन ऐप से बाहर निकलना चाहते हैं?')) {
+   const appPlugin = window.Capacitor?.Plugins?.App;
+   if (appPlugin?.exitApp) appPlugin.exitApp();
+  }
+ }
+ return false;
+}
+
+window.addEventListener('popstate', () => handleBackNavigation(false));
+
+function setupAndroidBackButton() {
+ const appPlugin = window.Capacitor?.Plugins?.App;
+ if (!appPlugin || window.__mandirBackButtonRegistered) return;
+ window.__mandirBackButtonRegistered = true;
+ appPlugin.addListener('backButton', () => handleBackNavigation(true));
+}
+
+document.addEventListener('deviceready', setupAndroidBackButton);
+window.addEventListener('load', setupAndroidBackButton);
+
+function head(title, sub, btn = '') {
+ return `<div class="pagehead"><div><h1>${title}</h1><p>${sub}</p></div>${btn}</div>`;
+}
+
+function stat(label, value, sub, ico) {
+ return `<div class="stat"><span class="ico">${ico}</span><label>${label}</label><h2>${value}</h2><small>${sub}</small></div>`;
+}
+
+function table(headers, rows, empty = 'अभी कोई रिकॉर्ड उपलब्ध नहीं है।') {
+ return `<div class="tablewrap"><table><thead><tr>${headers.map(x => `<th>${x}</th>`).join('')}</tr></thead><tbody>${rows || `<tr><td colspan="${headers.length}" class="empty">${empty}</td></tr>`}</tbody></table></div>`;
+}
+
+function dashboard() {
+ let bannerHtml = `
+ <div class="banner-card">
+  <img src="assets/samiti_logo.png" onerror="this.onerror=null;this.style.display='none';">
+  <div>
+   <h2>${safe(db.settings?.temple || 'मंदिर निर्माण समिति')}</h2>
+   <p>स्थान: ${safe(db.settings?.place || 'बाघाकोल (बेला बिगहा)')} • Cloud पारदर्शी रजिस्टर</p>
+  </div>
+ </div>`;
+
+ let verifiedDonations = (db.donations || []).filter(d => d.verified && !d.rejected);
+ let inc = totalVerified(db.donations, 'amount'), out = total(db.expenses, 'amount'), bal = inc - out;
+ let goal = Number(db.settings?.goal || 500000), pct = goal ? Math.min(100, Math.round(inc / goal * 100)) : 0;
+ let recent = [...(db.donations || [])].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 5);
+
+ let isAdmin = (!isPublicMode && userRole === 'admin');
+
+ let dashboardActionBtns = isAdmin ? `
+  <button onclick="openDonation()">+ नया चंदा</button>
+  <button class="secondary" onclick="openExpense()">+ खर्च दर्ज करें</button>
+  <button class="secondary" onclick="page('certificates')">आभार पत्र जारी करें</button>
+  <button class="secondary" style="background:#f3e9d7;color:#b85c16" onclick="page('aiAnalytics')">🤖 AI सलाह लें</button>
+ ` : `
+  <button class="success" onclick="openPublicDonation()">🙏 ऑनलाइन चंदा / दान दें</button>
+  <button class="secondary" onclick="openMySubmissions()">📋 मेरी जमा रसीदें</button>
+  <button class="secondary" onclick="page('certificates')">🏅 आभार पत्र डाउनलोड</button>
+ `;
+
+ document.getElementById('view').innerHTML = bannerHtml + head('नमस्कार 🙏', 'मंदिर निर्माण की प्रगति व आधिकारिक स्थिति।', isPublicMode ? '<button class="success" onclick="openPublicDonation()">🙏 ऑनलाइन चंदा / दान दें</button>' : '') +
+ `<div class="grid">
+   ${stat('कुल प्राप्त चंदा', money(inc), verifiedDonations.length + ' कुल सत्यापित दानकर्ता', '🙏')}
+   ${stat('कुल निर्माण व्यय', money(out), (db.expenses || []).length + ' खर्च प्रविष्टियाँ', '₹')}
+   ${stat('उपलब्ध बैलेंस', money(bal), 'प्राप्ति − व्यय', '💰')}
+   ${stat('सत्यापित दानदाता', verifiedDonations.length, 'स्वीकृत रिकॉर्ड', '👥')}
+  </div>
+  <div class="sectiongrid">
+   <div class="panel">
+    <h3>मंदिर निर्माण निधि स्थिति</h3>
+    <div style="display:flex;justify-content:space-between;margin:16px 0 8px"><b>${pct}% निर्माण लक्ष्य प्राप्त</b><span class="muted">${goal ? money(goal) + ' लक्ष्य' : ''}</span></div>
+    <div class="progress"><i style="width:${pct}%"></i></div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:18px">
+      ${dashboardActionBtns}
+     </div>
+   </div>
+   <div class="panel">
+    <h3>हाल में प्राप्त दान</h3>
+    ${table(['दिनांक', 'दानदाता', 'राशि', 'स्थिति'], recent.map(x => `
+     <tr>
+      <td>${fmt(x.date)}</td>
+      <td><b>${safe(x.name)}</b></td>
+      <td><b>${money(x.amount)}</b></td>
+      <td>${x.verified ? '<span class="pill green">✔ सत्यापित</span>' : x.rejected ? '<span class="pill red">✖ अस्वीकृत</span>' : '<span class="pill orange">⌛ लंबित</span>'}</td>
+     </tr>`).join(''))}
+   </div>
+  </div>
+  <div class="panel" style="margin-top:14px">
+   <h3>निर्माण कार्य प्रगति</h3>
+   ${(db.works || []).length ? (db.works || []).slice(0, 4).map(w => `
+    <div style="margin:12px 0">
+     <div style="display:flex;justify-content:space-between;font-size:13px;margin-bottom:6px">
+      <b>${safe(w.name)} (${safe(w.status)})</b><span>${w.progress || 0}%</span>
+     </div>
+     <div class="progress"><i style="width:${Math.min(100, Number(w.progress || 0))}%"></i></div>
+    </div>`).join('') : '<p class="muted">अभी कार्य विवरण दर्ज नहीं है।</p>'}
+  </div>`;
+}
+
+function field(label, name, type = 'text', value = '', required = false, opts = null) {
+ let control = opts ? `<select name="${name}">${opts.map(o => `<option ${o === value ? 'selected' : ''}>${o}</option>`).join('')}</select>` :
+  type === 'textarea' ? `<textarea name="${name}">${safe(value)}</textarea>` :
+  type === 'checkbox' ? `<input name="${name}" type="checkbox" ${value ? 'checked' : ''} style="width:auto;min-height:auto">` :
+  `<input name="${name}" type="${type}" value="${safe(value)}" ${required ? 'required' : ''}>`;
+ return `<div class="field"><label>${label}${required ? ' *' : ''}</label>${control}</div>`;
+}
+
+function formWrap(fields, fn) {
+ return `<form onsubmit="${fn}(event)"><div class="fieldgrid">${fields}</div><div class="actions"><button type="button" class="secondary" onclick="closeModal()">रद्द करें</button><button type="submit">सेव करें</button></div></form>`;
+}
+
+// PUBLIC SELF-DONATION SUBMISSION FORM
+function openPublicDonation() {
+ let f = field('आपका पूरा नाम', 'name', 'text', '', true) +
+  field('दान राशि (₹)', 'amount', 'number', '', true) +
+  field('ग्राम / पता', 'address', 'text', '') +
+  field('मोबाइल नंबर', 'phone', 'tel', '', true) +
+  field('दिनांक', 'date', 'date', today(), true) +
+  field('भुगतान माध्यम', 'method', 'text', 'UPI (ऑनलाइन)', false, ['UPI (ऑनलाइन)', 'नकद (ऑफलाइन)', 'बैंक ट्रांसफर', 'चेक']) +
+  field('ट्रांजैक्शन / UTR नंबर', 'ref', 'text', '') +
+  field('शुभ संदेश / टिप्पणी', 'note', 'textarea', '');
+ openModal('🙏 मंदिर हेतु चंदा / दान जमा करें', formWrap(f, 'savePublicDonation'));
+}
+
+async function savePublicDonation(e) {
+ e.preventDefault();
+ const fd = new FormData(e.target);
+ const x = Object.fromEntries(fd);
+ x.amount = Number(x.amount);
+ if (!Number.isFinite(x.amount) || x.amount <= 0 || x.amount > 10000000) return alert('सही दान राशि दर्ज करें।');
+ if (!cloud) return alert('Cloud connection उपलब्ध नहीं है।');
+ try {
+  const { data, error } = await cloud.functions.invoke('submit-donation', { body: {
+   org_id: MAIN_ORG_ID, donor_name: String(x.name || '').trim(), amount: x.amount,
+   donor_address: String(x.address || '').trim(), donor_phone: String(x.phone || '').trim(),
+   donation_date: x.date || today(), payment_method: x.method || '',
+   transaction_ref: String(x.ref || '').trim(), note: String(x.note || '').trim()
+  }});
+  if (error) throw error;
+  if (!data?.id || !data?.trackingToken) throw new Error('सर्वर से सुरक्षित Tracking Token नहीं मिला।');
+  let items = [];
+  try { items = JSON.parse(localStorage.getItem(MY_SUBMISSIONS_KEY) || '[]'); } catch (_) {}
+  items.push({ id: data.id, token: data.trackingToken, receipt: data.receipt });
+  localStorage.setItem(MY_SUBMISSIONS_KEY, JSON.stringify(items));
+  closeModal();
+  alert(`प्रणाम ${safe(x.name)} जी! 🙏 आपकी दान प्रविष्टि सत्यापन हेतु भेज दी गई है। रसीद: ${data.receipt || '—'}\nयह अभी सत्यापित दान नहीं है।`);
+  await openMySubmissions();
+ } catch (err) {
+  alert('दान प्रविष्टि सर्वर तक नहीं पहुँची: ' + (err.message || 'अज्ञात त्रुटि') + '\nकृपया दोबारा जाँचें।');
+ }
+}
+
+async function openMySubmissions() {
+ let items = [];
+ try { items = JSON.parse(localStorage.getItem(MY_SUBMISSIONS_KEY) || '[]'); } catch (_) {}
+ let rows = [];
+ for (const item of items) {
+  try {
+   const { data, error } = await cloud.functions.invoke('check-donation', { body: { id: item.id, trackingToken: item.token } });
+   if (error) throw error;
+   const status = data?.status || 'unknown';
+   const label = status === 'approved' ? '<span class="pill green">✔ स्वीकृत</span>' : status === 'rejected' ? `<span class="pill red">✖ अस्वीकृत: ${safe(data.rejection_reason || '')}</span>` : '<span class="pill orange">⌛ सत्यापन लंबित</span>';
+   rows.push(`<tr><td>${safe(data?.receipt || item.receipt || '—')}</td><td>${label}</td></tr>`);
+  } catch (e) {
+   rows.push(`<tr><td>${safe(item.receipt || item.id)}</td><td><span class="pill orange">स्थिति अभी उपलब्ध नहीं</span></td></tr>`);
+  }
+ }
+ openModal('📋 मेरी जमा प्रविष्टियाँ', `<p class="notice">यह सूची इसी फोन पर सुरक्षित Tracking Token के आधार पर स्थिति दिखाती है। निजी दान जानकारी सार्वजनिक रूप से नहीं पढ़ी जाती।</p>${table(['रसीद', 'स्थिति'], rows.join(''), 'इस फोन से कोई दान प्रविष्टि जमा नहीं हुई है।')}`);
+}
+
+// COMMUNITY NOTICE BOARD & ANNOUNCEMENTS
+function openNoticeModal() {
+ openModal('📢 नई समुदाय घोषणा / सूचना जारी करें', `
+  <form onsubmit="saveNotice(event)">
+   <div class="fieldgrid">
+    ${field('घोषणा का शीर्षक (Title)', 'title', 'text', '', true)}
+    ${field('श्रेणी (Category)', 'category', 'text', 'सामान्य सूचना', true, ['सामान्य सूचना', 'पूजा / धार्मिक आयोजन', 'निर्माण कार्य प्रगति', 'विशेष घोषणा'])}
+    ${field('दिनांक', 'date', 'date', today(), true)}
+    ${field('सार्वजनिक पोर्टल पर प्रकाशित करें', 'public_approved', 'checkbox', false)}
+    <div class="field full"><label>विवरण / संदेश (Text Notice)</label><textarea name="content" required placeholder="यहाँ सूचना/घोषणा का पूरा विवरण लिखें..."></textarea></div>
+    <div class="field full"><label>संलग्नक (इमेज / पोस्टर PNG / JPG या PDF)</label><input type="file" id="noticeFileInput" accept="image/*,.pdf"></div>
+   </div>
+   <div class="actions"><button type="button" class="secondary" onclick="closeModal()">रद्द करें</button><button type="submit" class="success">📢 प्रकाशित करें</button></div>
+  </form>
+ `);
+}
+
+async function saveNotice(e) {
+ if (!requireAdminAction()) return;
+ e.preventDefault();
+ let fd = new FormData(e.target);
+ let x = Object.fromEntries(fd);
+ x.public_approved = fd.get('public_approved') === 'on';
+ x.id = id('NOT');
+ x.author = currentUser?.email ? currentUser.email.split('@')[0] : 'समिति एडमिन';
+
+ let fileInput = document.getElementById('noticeFileInput');
+ if (fileInput && fileInput.files[0]) {
+  let file = fileInput.files[0];
+  x.mediaName = file.name;
+  x.mediaType = file.type.includes('pdf') ? 'pdf' : 'image';
+
+  let reader = new FileReader();
+  reader.onload = async function(evt) {
+   x.mediaUrl = evt.target.result;
+   if (!db.notices) db.notices = [];
+   db.notices.unshift(x);
+   if (!await save()) return;
+   closeModal();
+   alert('📢 सूचना Cloud में प्रकाशित हो गई!');
+   community();
+  };
+  reader.readAsDataURL(file);
+ } else {
+  x.mediaType = 'none';
+  if (!db.notices) db.notices = [];
+  db.notices.unshift(x);
+  if (!await save()) return;
+  closeModal();
+  alert('📢 सूचना Cloud में प्रकाशित हो गई!');
+  community();
+ }
+}
+
+async function deleteNotice(nid) {
+ if (!requireAdminAction()) return;
+ if (!confirm('क्या आप यह सूचना हटाना चाहते हैं?')) return;
+ db.notices = (db.notices || []).filter(n => n.id !== nid);
+ if (!await save()) return;
+ community();
+}
+
+function shareNoticeWhatsApp(nid) {
+ let n = (db.notices || []).find(x => x.id === nid);
+ if (!n) return;
+ let msg = `📢 *${db.settings?.temple || 'मंदिर समिति'} - सूचना*\n\n*${n.title}*\nदिनांक: ${fmt(n.date)}\n\n${n.content}\n\nजय माता दी! 🙏`;
+ window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(msg)}`, '_blank');
+}
+
+function community() {
+ let notices = db.notices || [];
+ let isAdmin = (!isPublicMode && userRole === 'admin');
+
+ let postBtn = isAdmin ? `<button class="success" onclick="openNoticeModal()">📢 नई सूचना जारी करें</button>` : '';
+
+ let noticeCards = notices.map(n => {
+  let mediaHtml = '';
+  if (n.mediaType === 'image' && n.mediaUrl) {
+   mediaHtml = `<img src="${n.mediaUrl}" class="notice-media-img" alt="${safe(n.title)}" onclick="openImageModal('${n.mediaUrl}')">`;
+  } else if (n.mediaType === 'pdf' && n.mediaUrl) {
+   mediaHtml = `
+    <div class="notice-pdf-box">
+     <div>📄 <b>${safe(n.mediaName || 'दस्तावेज़.pdf')}</b></div>
+     <a href="${n.mediaUrl}" download="${safe(n.mediaName || 'Notice.pdf')}" target="_blank">
+      <button class="small success">📥 PDF डाउनलोड</button>
+     </a>
+    </div>`;
+  }
+
+  let adminDeleteBtn = isAdmin ? `<button class="small danger" onclick="deleteNotice('${n.id}')">हटाएं</button>` : '';
+
+  return `
+   <div class="notice-card">
+    <div class="notice-head">
+     <div>
+      <span class="pill orange">${safe(n.category || 'सूचना')}</span>
+      <span style="font-size:12px;color:var(--muted);margin-left:6px">${fmt(n.date)}</span>
+     </div>
+     <span style="font-size:11px;color:var(--muted)">जारीकर्ता: ${safe(n.author || 'एडमिन')}</span>
+    </div>
+    <h3>${safe(n.title)}</h3>
+    <p>${safe(n.content)}</p>
+    ${mediaHtml}
+    <div style="display:flex;gap:8px;justify-content:flex-end;margin-top:10px">
+     <button class="small secondary" style="background:#25D366;color:#fff" onclick="shareNoticeWhatsApp('${n.id}')">📱 शेयर</button>
+     ${adminDeleteBtn}
+    </div>
+   </div>
+  `;
+ }).join('');
+
+ document.getElementById('view').innerHTML = head('📢 मंदिर समुदाय एवं सूचना पट', 'आधिकारिक घोषणाएं, पूजा कार्यक्रम व सूचनाएं।', postBtn) +
+ `<div style="max-width:850px;margin:0 auto">
+   ${noticeCards || '<div class="panel empty"><p class="muted">अभी कोई सूचना जारी नहीं की गई है।</p></div>'}
+  </div>`;
+}
+
+function openImageModal(imgUrl) {
+ openModal('🖼 सूचना पोस्टर', `
+  <div style="text-align:center">
+   <img src="${imgUrl}" style="width:100%;max-height:75vh;object-fit:contain;border-radius:8px;box-shadow:0 4px 20px rgba(0,0,0,0.3)">
+   <div style="margin-top:14px">
+    <button class="success" onclick="saveBase64ImageToDevice('${imgUrl}', 'Mandir_Poster.png')">💾 गैलरी में सेव करें</button>
+    <button class="secondary" onclick="closeModal()">बंद करें</button>
+   </div>
+  </div>
+ `);
+}
+
+function openDonation(d = null) {
+ let f = field('दानदाता का पूरा नाम', 'name', 'text', d?.name || '', true) +
+  field('दान राशि (₹)', 'amount', 'number', d?.amount || '', true) +
+  field('ग्राम / पता', 'address', 'text', d?.address || '') +
+  field('मोबाइल नंबर', 'phone', 'tel', d?.phone || '') +
+  field('दिनांक', 'date', 'date', d?.date || today(), true) +
+  field('भुगतान माध्यम', 'method', 'text', d?.method || 'UPI (ऑनलाइन)', false, ['UPI (ऑनलाइन)', 'नकद (ऑफलाइन)', 'बैंक ट्रांसफर', 'चेक', 'अन्य']) +
+  field('ट्रांजैक्शन / रसीद नंबर', 'ref', 'text', d?.ref || '') +
+  field('सार्वजनिक पोर्टल पर प्रशंसा पत्र प्रकाशित करें', 'public_approved', 'checkbox', d?.public_approved || false) +
+  field('टिप्पणी / विवरण', 'note', 'textarea', d?.note || '');
+ openModal(d ? 'दान रिकॉर्ड संपादित करें' : 'नया दान / चंदा दर्ज करें', formWrap(f, 'saveDonation'));
+}
+
+async function saveDonation(e) {
+ if (!requireAdminAction()) return;
+ e.preventDefault();
+ let fd = new FormData(e.target);
+ let x = Object.fromEntries(fd);
+ x.amount = Number(x.amount);
+ x.public_approved = fd.get('public_approved') === 'on';
+ if (x.amount <= 0) return alert('राशि शून्य से अधिक होनी चाहिए।');
+
+ if (!db.donations) db.donations = [];
+
+ if (x.id) {
+  let idx = db.donations.findIndex(a => a.id === x.id);
+  db.donations[idx] = { ...db.donations[idx], ...x };
+ } else {
+  x.id = id('DON');
+  x.receipt = 'RCPT-' + String(db.donations.length + 1).padStart(4, '0');
+  x.verified = true;
+  x.rejected = false;
+  x.verifiedBy = currentUser?.email ? currentUser.email.split('@')[0] : 'समिति एडमिन';
+  x.verificationId = 'VER-' + Date.now().toString().slice(-6);
+  db.donations.push(x);
+ }
+ if (!await save()) return; closeModal(); donations();
+}
+
+async function togglePublicApproval(did) {
+ if (!requireAdminAction()) return;
+ let d = (db.donations || []).find(x => x.id === did);
+ if (!d) return;
+ d.public_approved = !d.public_approved;
+ if (!await save()) return;
+ donations();
+}
+
+// ADMIN APPROVAL / VERIFICATION
+async function verifyDonation(did) {
+ if (!requireAdminAction()) return;
+ let d = (db.donations || []).find(x => x.id === did);
+ if (!d) return;
+ d.verified = true;
+ d.rejected = false;
+ // Public publication remains OFF until an Admin explicitly approves it.
+ d.public_approved = false;
+ d.verifiedBy = currentUser?.email ? currentUser.email.split('@')[0] : 'अधिकृत सदस्य';
+ d.verificationId = 'VER-' + Date.now().toString().slice(-6);
+ d.verifiedAt = today();
+
+ if (!await save()) return;
+ alert(`दानकर्ता ${d.name} का दान सफलतापूर्वक स्वीकृत एवं सत्यापित किया गया! कुल जमा राशि में ${money(d.amount)} जुड़ गए हैं।`);
+ page('donations');
+}
+
+// ADMIN REJECTION WORKFLOW
+async function rejectDonation(did) {
+ if (!requireAdminAction()) return;
+ let d = (db.donations || []).find(x => x.id === did);
+ if (!d) return;
+ let reason = prompt(`क्या आप ${d.name} का दान अस्वीकृत करना चाहते हैं?\nकृपया कारण दर्ज करें (उदा: पेमेंट यूटीआर / ट्रांजैक्शन नहीं मिला):`, 'पेमेंट UTR सत्यापन विफल');
+ if (reason === null) return;
+ d.verified = false;
+ d.rejected = true;
+ d.public_approved = false;
+ d.rejection_reason = reason.trim() || 'पेमेंट सत्यापन विफल';
+
+ if (!await save()) return;
+ alert(`दानकर्ता ${d.name} की प्रविष्टि अस्वीकृत (Rejected) कर दी गई है।`);
+ page('donations');
+}
+
+// SYNC ONLINE SUBMISSIONS MANUALLY FOR ADMIN
+async function syncOnlineSubmissions() {
+ if (!requireAdminAction() || !cloud) return;
+ try { await fetchPendingDonationSubmissions(); donations(); showCloudStatus('ऑनलाइन लंबित प्रविष्टियाँ लोड हुईं'); }
+ catch (e) { showCloudStatus('Pending submissions sync error: ' + e.message, true); }
+}
+
+async function approveDonationSubmission(submissionId) {
+ if (!requireAdminAction()) return;
+ const sub = pendingSubmissions.find(x => x.id === submissionId);
+ if (!sub) return alert('यह pending submission अब उपलब्ध नहीं है। Refresh करें।');
+ let d = (db.donations || []).find(x => x.source_submission_id === sub.id);
+ if (!d) {
+  d = { id: id('DON'), source_submission_id: sub.id, receipt: sub.receipt || ('RCPT-' + Date.now().toString().slice(-6)),
+   name: sub.donor_name, amount: Number(sub.amount), address: sub.donor_address || '', phone: sub.donor_phone || '',
+   date: sub.donation_date, method: sub.payment_method || '', ref: sub.transaction_ref || '', note: sub.note || '',
+   verified: true, rejected: false, public_approved: false, verifiedBy: currentUser?.email || 'Admin',
+   verifiedAt: today(), verificationId: 'VER-' + Date.now().toString().slice(-6) };
+  db.donations.push(d);
+ }
+ const saved = await saveNow();
+ if (!saved) return alert('Private/Public state save failed. Submission को pending ही रहने दें; Cloud status जाँचें।');
+ const { error } = await cloud.from('donation_submissions').update({ status: 'approved', donation_id: d.id, reviewed_at: new Date().toISOString() }).eq('id', sub.id);
+ if (error) return alert('दान रिकॉर्ड सेव है, लेकिन Submission status update नहीं हुआ: ' + error.message);
+ await fetchPendingDonationSubmissions(); donations();
+ alert('दान स्वीकार और सत्यापित हो गया। Public certificate/record अलग से publish करना होगा।');
+}
+
+async function rejectDonationSubmission(submissionId) {
+ if (!requireAdminAction()) return;
+ const reason = prompt('अस्वीकृति का कारण लिखें:');
+ if (reason === null) return;
+ const { error } = await cloud.from('donation_submissions').update({ status: 'rejected', rejection_reason: reason.trim().slice(0,500), reviewed_at: new Date().toISOString() }).eq('id', submissionId);
+ if (error) return alert('अस्वीकृति सेव नहीं हुई: ' + error.message);
+ await fetchPendingDonationSubmissions(); donations();
+}
+
+function donationsRenderPendingOnly() { donations.__skipPendingFetch = true; donations(); donations.__skipPendingFetch = false; }
+
+function donations() {
+ const isAdmin = isAdminSession();
+ if (isAdmin && cloud && !donations.__skipPendingFetch) fetchPendingDonationSubmissions().then(() => { if (document.querySelector('#nav button.active')?.dataset?.page === 'donations') donationsRenderPendingOnly(); }).catch(e => showCloudStatus('Pending sync error: ' + e.message, true));
+ const topBtn = isAdmin ? `<div style="display:flex;gap:8px"><button onclick="openDonation()">+ नया चंदा दर्ज करें</button><button class="secondary" onclick="syncOnlineSubmissions()">🔄 ऑनलाइन submissions सिंक</button></div>` : `<button class="success" onclick="openPublicDonation()">🙏 ऑनलाइन चंदा / दान दें</button>`;
+ const pendingRows = isAdmin ? pendingSubmissions.map(x => `<tr><td>${safe(x.receipt || x.id)}</td><td>${safe(x.donor_name)}</td><td>${money(x.amount)}</td><td>${safe(x.donor_phone || '—')}</td><td>${fmt(x.donation_date)}</td><td><button class="small success" onclick="approveDonationSubmission('${x.id}')">स्वीकार</button> <button class="small danger" onclick="rejectDonationSubmission('${x.id}')">अस्वीकार</button></td></tr>`).join('') : '';
+ const rows = (db.donations || []).slice().sort((a,b) => String(b.date||'').localeCompare(String(a.date||''))).map(x => {
+  const actions = isAdmin ? `<button class="small ${x.public_approved ? 'success' : 'secondary'}" onclick="togglePublicApproval('${x.id}')">${x.public_approved ? '🌐 प्रकाशित' : '🔒 अप्रकाशित'}</button> <button class="small secondary" onclick="makeCert('${x.id}')">🏅 आभार पत्र</button> <button class="small danger" onclick="del('donations','${x.id}')">×</button>` : `<button class="small secondary" onclick="makeCert('${x.id}')">🏅 प्रमाणपत्र</button>`;
+  return `<tr><td>${safe(x.receipt || x.id)}</td><td>${fmt(x.date)}</td><td><b>${safe(x.name)}</b>${isAdmin ? `<br><small>${safe(x.phone || '')}</small>` : ''}</td>${isAdmin ? `<td>${safe(x.address || '—')}</td>` : ''}<td>${money(x.amount)}</td><td>${safe(x.method || '—')}</td><td>${x.verified ? '<span class="pill green">✔ सत्यापित</span>' : x.rejected ? '<span class="pill red">✖ अस्वीकृत</span>' : '<span class="pill orange">लंबित</span>'}</td><td>${actions}</td></tr>`;
+ }).join('');
+ document.getElementById('view').innerHTML = head(isPublicMode ? 'सार्वजनिक दान विवरण' : 'चंदा / दान रजिस्टर', isPublicMode ? 'केवल प्रकाशित एवं सत्यापित दान विवरण।' : 'आंतरिक दान रजिस्टर और ऑनलाइन अनुरोधों की समीक्षा।', topBtn) +
+  (isAdmin ? `<div class="panel" style="margin-bottom:14px"><h3>ऑनलाइन दान अनुरोध (Admin Review)</h3>${table(['रसीद','दानदाता','राशि','मोबाइल','दिनांक','कार्रवाई'],pendingRows,'कोई pending request नहीं।')}</div>` : '') +
+  `<div class="panel"><div class="toolbar"><input id="donSearch" placeholder="दानदाता / रसीद खोजें" oninput="filterTable('donSearch','donTable')">${isAdmin ? '<button class="secondary" onclick="exportCSV(\'donations\')">CSV एक्सपोर्ट</button>' : ''}</div><div id="donTable">${table(isAdmin ? ['रसीद नं.','दिनांक','दानदाता','पता','राशि','माध्यम','सत्यापन','कार्यवाही'] : ['रसीद नं.','दिनांक','दानदाता','राशि','माध्यम','सत्यापन','प्रमाणपत्र'],rows)}</div></div>`;
+}
+
+function openExpense() {
+ let f = field('खर्च का विवरण', 'description', 'text', '', true) +
+  field('राशि (₹)', 'amount', 'number', '', true) +
+  field('दिनांक', 'date', 'date', today(), true) +
+  field('श्रेणी', 'category', 'text', 'निर्माण सामग्री', false, ['निर्माण सामग्री', 'मजदूरी', 'परिवहन', 'पूजा / धार्मिक आयोजन', 'प्रशासकीय / स्टेशनरी', 'अन्य']) +
+  field('भुगतान किसे किया', 'paidTo') +
+  field('भुगतान माध्यम', 'method', 'text', 'नकद', false, ['नकद', 'UPI', 'बैंक ट्रांसफर', 'चेक']) +
+  field('वाउचर / रसीद नं.', 'voucher') +
+  field('टिप्पणी', 'note', 'textarea') +
+  field('सार्वजनिक पोर्टल पर इस खर्च को दिखाएं', 'public_approved', 'checkbox', false);
+ openModal('नया खर्च / भुगतान दर्ज करें', formWrap(f, 'saveExpense'));
+}
+
+async function saveExpense(e) {
+ if (!requireAdminAction()) return;
+ e.preventDefault();
+ let fd = new FormData(e.target);
+ let x = Object.fromEntries(fd);
+ x.public_approved = fd.get('public_approved') === 'on';
+ x.amount = Number(x.amount);
+ if (x.amount <= 0) return alert('सही राशि दर्ज करें।');
+ if (!db.expenses) db.expenses = [];
+ x.id = id('EXP'); db.expenses.push(x); if (!await save()) return; closeModal(); expenses();
+}
+
+function expenses() {
+ let isAdmin = isAdminSession();
+ let addBtn = isAdmin ? `<button onclick="openExpense()">+ खर्च दर्ज करें</button>` : '';
+ let rows = (db.expenses || []).slice().sort((a, b) => String(b.date||'').localeCompare(String(a.date||''))).map(x => `
+  <tr>
+   <td>${fmt(x.date)}</td><td><b>${safe(x.description)}</b></td><td>${safe(x.category || '—')}</td>
+   ${isAdmin ? `<td>${safe(x.paidTo || '—')}</td>` : ''}
+   <td><b>${money(x.amount)}</b></td><td>${safe(x.method || '')}</td>
+   ${isAdmin ? `<td><button class="small danger" onclick="del('expenses','${x.id}')">हटाएं</button></td>` : ''}
+  </tr>`).join('');
+ const headers = isAdmin ? ['दिनांक','विवरण','श्रेणी','भुगतान प्राप्तकर्ता','राशि','माध्यम','कार्यवाही'] : ['दिनांक','प्रकाशित खर्च विवरण','श्रेणी','राशि','माध्यम'];
+ document.getElementById('view').innerHTML = head(isAdmin ? 'खर्च एवं भुगतान रिकॉर्ड' : 'सार्वजनिक खर्च विवरण', isAdmin ? 'आंतरिक खर्च और भुगतान रजिस्टर।' : 'केवल सार्वजनिक रूप से स्वीकृत खर्च।', addBtn) +
+ `<div class="grid" style="margin-bottom:14px">
+   ${stat(isAdmin ? 'कुल खर्च' : 'प्रकाशित कुल खर्च', money(total(db.expenses, 'amount')), (db.expenses || []).length + ' रिकॉर्ड', '₹')}
+   ${stat('कुल प्राप्त दान', money(totalVerified(db.donations, 'amount')), 'स्वीकृत/प्रकाशित सहयोग', '🙏')}
+   ${stat('शेष राशि', money(totalVerified(db.donations, 'amount') - total(db.expenses, 'amount')), 'दिखाए गए रिकॉर्ड के आधार पर', '💰')}
+  </div><div class="panel">${table(headers, rows)}</div>`;
+}
+
+function openWork(w = null) {
+ let f = field('कार्य / चरण का नाम', 'name', 'text', w?.name || '', true) +
+  field('अनुमानित बजट (₹)', 'budget', 'number', w?.budget || '') +
+  field('शुरुआत तिथि', 'start', 'date', w?.start || today()) +
+  field('स्थिति', 'status', 'text', w?.status || 'प्रगति पर', false, ['योजना', 'प्रगति पर', 'पूर्ण', 'स्थगित']) +
+  field('प्रगति (%)', 'progress', 'number', w?.progress || 0) +
+  field('प्रभारी / जिम्मेदार व्यक्ति', 'person', 'text', w?.person || '') +
+  field('कार्य विवरण', 'details', 'textarea', w?.details || '');
+ const hiddenId = w?.id ? `<input type="hidden" name="id" value="${safe(w.id)}">` : '';
+ openModal(w ? 'कार्य संपादित करें' : 'नया निर्माण कार्य जोड़ें', formWrap(hiddenId + f, 'saveWork'));
+}
+
+async function saveWork(e) {
+ if (!requireAdminAction()) return;
+ e.preventDefault();
+ let x = Object.fromEntries(new FormData(e.target));
+ x.progress = Math.max(0, Math.min(100, Number(x.progress || 0)));
+ if (!db.works) db.works = [];
+ if (x.id) db.works[db.works.findIndex(a => a.id === x.id)] = x;
+ else { x.id = id('WORK'); db.works.push(x); }
+ if (!await save()) return; closeModal(); construction();
+}
+
+function construction() {
+ let isAdmin = isAdminSession();
+ let addBtn = isAdmin ? `<button onclick="openWork()">+ नया कार्य जोड़ें</button>` : '';
+ let rows = (db.works || []).map(w => `
+  <tr><td><b>${safe(w.name)}</b>${isAdmin && w.details ? `<br><small class="muted">${safe(w.details)}</small>` : ''}</td>
+   ${isAdmin ? `<td>${money(w.budget)}</td><td>${safe(w.person || '—')}</td>` : ''}
+   <td><span class="pill ${w.status === 'पूर्ण' ? 'green' : 'orange'}">${safe(w.status)}</span></td>
+   <td style="min-width:130px"><div class="progress"><i style="width:${Math.max(0,Math.min(100,Number(w.progress||0)))}%"></i></div><small>${Math.max(0,Math.min(100,Number(w.progress||0)))}% पूर्ण</small></td>
+   ${isAdmin ? `<td><button class="small secondary" onclick="openWork(db.works.find(x=>x.id==='${w.id}'))">Edit</button> <button class="small danger" onclick="del('works','${w.id}')">×</button></td>` : ''}
+  </tr>`).join('');
+ const headers = isAdmin ? ['कार्य / चरण','अनुमानित बजट','जिम्मेदार','स्थिति','प्रगति','कार्यवाही'] : ['सार्वजनिक निर्माण चरण','स्थिति','प्रगति'];
+ document.getElementById('view').innerHTML = head('निर्माण कार्य प्रगति', 'मंदिर निर्माण के प्रकाशित चरणों का विवरण एवं स्थिति।', addBtn) + `<div class="panel">${table(headers, rows)}</div>`;
+}
+
+function openMember() {
+ let f = field('पूरा नाम', 'name', 'text', '', true) +
+  field('पद / भूमिका', 'role', 'text', 'सदस्य', true, ['अध्यक्ष', 'सचिव', 'कोषाध्यक्ष', 'उपाध्यक्ष', 'संरक्षक', 'सदस्य']) +
+  field('मोबाइल नंबर', 'phone', 'tel') +
+  field('पता / ग्राम', 'address') +
+  field('सार्वजनिक पोर्टल पर मोबाइल नंबर दिखाएं', 'public_contact', 'checkbox', false) +
+  field('जिम्मेदारी / कार्यभार', 'duty', 'textarea');
+ openModal('समिति सदस्य जोड़ें', formWrap(f, 'saveMember'));
+}
+
+async function saveMember(e) {
+ if (!requireAdminAction()) return;
+ e.preventDefault();
+ let fd = new FormData(e.target);
+ let x = Object.fromEntries(fd);
+ x.public_contact = fd.get('public_contact') === 'on';
+ if (!db.members) db.members = [];
+ x.id = id('MEM'); db.members.push(x); if (!await save()) return; closeModal(); committee();
+}
+
+function committee() {
+ let isAdmin = isAdminSession();
+ let addBtn = isAdmin ? `<button onclick="openMember()">+ सदस्य जोड़ें</button>` : '';
+ let rows = (db.members || []).map(m => `
+  <tr><td><b>${safe(m.name)}</b></td><td><span class="pill orange">${safe(m.role)}</span></td>
+   <td>${safe(m.phone || '—')}</td>
+   ${isAdmin ? `<td>${safe(m.address || '—')}</td><td>${safe(m.duty || '—')}</td><td><button class="small danger" onclick="del('members','${m.id}')">हटाएं</button></td>` : ''}
+  </tr>`).join('');
+ const headers = isAdmin ? ['नाम','पद','संपर्क','पता','जिम्मेदारी','कार्यवाही'] : ['समिति सदस्य','पद','सार्वजनिक संपर्क'];
+ document.getElementById('view').innerHTML = head('समिति सदस्य एवं पदाधिकारी', 'समिति के सार्वजनिक रूप से उपलब्ध पदाधिकारी व संपर्क।', addBtn) + `<div class="panel">${table(headers, rows)}</div>`;
+}
+
+function openMeeting() {
+ let f = field('बैठक की तिथि', 'date', 'date', today(), true) +
+  field('स्थान', 'place') +
+  field('उपस्थित सदस्य', 'attendees', 'textarea') +
+  field('मुख्य निर्णय / प्रस्ताव', 'decisions', 'textarea') +
+  field('सार्वजनिक पोर्टल पर प्रकाशित करें', 'published', 'checkbox', false) +
+  field('अगली बैठक की तिथि', 'next', 'date');
+ openModal('बैठक रिकॉर्ड जोड़ें', formWrap(f, 'saveMeeting'));
+}
+
+async function saveMeeting(e) {
+ if (!requireAdminAction()) return;
+ e.preventDefault();
+ let fd = new FormData(e.target);
+ let x = Object.fromEntries(fd);
+ x.published = fd.get('published') === 'on';
+ if (!db.meetings) db.meetings = [];
+ x.id = id('MTG'); db.meetings.push(x); if (!await save()) return; closeModal(); meetings();
+}
+
+function meetings() {
+ let isAdmin = isAdminSession();
+ let addBtn = isAdmin ? `<button onclick="openMeeting()">+ बैठक जोड़ें</button>` : '';
+ let rows = (db.meetings || []).slice().sort((a, b) => String(b.date||'').localeCompare(String(a.date||''))).map(m => `
+  <tr><td>${fmt(m.date)}</td><td>${safe(m.place || '—')}</td>
+   ${isAdmin ? `<td>${safe(m.attendees || '—')}</td>` : ''}
+   <td style="white-space:normal;min-width:200px">${safe(m.decisions || '—')}</td><td>${fmt(m.next)}</td>
+   ${isAdmin ? `<td><button class="small danger" onclick="del('meetings','${m.id}')">हटाएं</button></td>` : ''}
+  </tr>`).join('');
+ const headers = isAdmin ? ['तारीख','स्थान','उपस्थित सदस्य','निर्णय / प्रस्ताव','अगली बैठक','कार्यवाही'] : ['प्रकाशित बैठक की तारीख','स्थान','प्रकाशित निर्णय','अगली बैठक'];
+ document.getElementById('view').innerHTML = head('बैठक एवं निर्णय रिकॉर्ड', isAdmin ? 'समिति की आंतरिक बैठकें और पारित प्रस्ताव।' : 'केवल सार्वजनिक रूप से प्रकाशित बैठक विवरण।', addBtn) + `<div class="panel">${table(headers, rows)}</div>`;
+}
+
+function certificates() {
+ let certList = (db.donations || []).filter(d => d.verified && !d.rejected);
+ let opts = certList.map(d => `<option value="${d.id}">${safe(d.name)} — ${money(d.amount)} — ${fmt(d.date)}</option>`).join('');
+ document.getElementById('view').innerHTML = head('आभार एवं प्रशंसा प्रमाणपत्र', 'दानदाता के लिए सुंदर हिंदी सम्मान पत्र तैयार करें, PNG/पम्पलेट डाउनलोड करें व A4/WhatsApp पर प्रिंट शेयर करें।') +
+ `<div class="panel" style="max-width:760px">
+   <h3>प्रमाणपत्र जारी करने के लिए दानदाता चुनें</h3>
+   ${certList.length ? `
+    <div class="field"><label>दानदाता चुनें</label><select id="certDonor">${opts}</select></div>
+    <div style="margin-top:16px"><button onclick="makeCert(document.getElementById('certDonor').value)">🏅 हिंदी आभार पत्र तैयार करें</button></div>` :
+    '<p class="muted">अभी कोई सत्यापित प्रमाणपत्र उपलब्ध नहीं है।</p>'}
+  </div>`;
+}
+
+// ROYAL HERITAGE CERTIFICATE GENERATOR WITH POPUP PNG DOWNLOAD MODAL
+function makeCert(did) {
+ let certList = (db.donations || []);
+ let d = certList.find(x => x.id === did);
+ if (!d) return;
+ let s = db.settings || {};
+ let certNo = 'CERT-' + (d.receipt || d.id);
+ let isOnline = (d.method || '').toLowerCase().includes('upi') || (d.method || '').toLowerCase().includes('बैंक');
+ let hindiAmountWords = numToHindiWords(d.amount);
+
+ let certHtml = `
+ <div class="cert-preview-container">
+  <div class="cert-preview" id="certificate">
+   <img src="assets/samiti_logo.png" onerror="this.onerror=null;this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 100 100\'><rect width=\'100\' height=\'100\' fill=\'%23b85c16\'/><text x=\'50\' y=\'60\' font-size=\'45\' text-anchor=\'middle\' fill=\'%23fff\'>🛕</text></svg>';" class="header-logo" alt="समिति लोगो">
+   <h2>${safe(s.temple || 'मंदिर निर्माण समिति')}</h2>
+   <div class="location">${safe(s.place || 'बाघाकोल (बेला बिगहा)')}</div>
+   <div class="divider"></div>
+   <div class="cert-subtitle">॥ श्री गणेशाय नमः • जय माता दी ॥</div>
+   <div class="certtitle">आभार एवं प्रशंसा पत्र</div>
+
+   <div class="blessing">
+    मंदिर निर्माण के इस पावन एवं पवित्र कार्य में आपके द्वारा दिए गए अत्यंत सराहनीय एवं श्रद्धापूर्ण आर्थिक सहयोग के लिए<br>
+    <b>${safe(s.temple)}</b> आपका सहृदय धन्यवाद एवं आभार व्यक्त करती है।
+   </div>
+
+   <div class="donor-box">
+    <b>दानदाता का नाम :</b> ${safe(d.name)}<br>
+    <b>दान राशि :</b> <span style="color:#b85c16;font-weight:bold">${money(d.amount)}</span> (<b style="color:#8f3d04">${hindiAmountWords}</b>)<br>
+    <b>ग्राम / पता :</b> ${safe(d.address || '—')}<br>
+    <b>भुगतान प्रकार :</b> ${isOnline ? '🌐 ऑनलाइन भुगतान (' + safe(d.method) + ')' : '💵 ऑफलाइन (नकद/चेक)'}<br>
+    <b>रसीद संख्या :</b> ${safe(d.receipt || d.id)} &nbsp;|&nbsp; <b>दिनांक :</b> ${fmt(d.date)}
+   </div>
+
+   ${d.verified ? `
+    <div class="verification-seal">
+     ✔ अधिकृत समिति सदस्य द्वारा सत्यापित &nbsp;|&nbsp; सत्यापन आईडी: ${safe(d.verificationId || 'VER-AUTHENTIC')} &nbsp;|&nbsp; सत्यापनकर्ता: ${safe(d.verifiedBy || 'Admin')}
+    </div>` : `
+    <div style="font-size:11.5px;color:#9e6f10;margin:6px 0">
+     * यह रसीद ऑनलाइन Cloud रजिस्टर में दर्ज है। (सत्यापन प्रक्रियाधीन)
+    </div>`}
+
+   <div class="blessing" style="margin-top:12px;font-size:12px">
+    आपका यह योगदान हमारी धार्मिक आस्था, सामाजिक एकता और मंदिर निर्माण संकल्प को सुदृढ़ बनाता है।<br>
+    मां भवानी की असीम कृपा आपके तथा आपके परिवार पर सदैव बनी रहे।
+   </div>
+
+   <div class="signrow">
+    <div><b>${safe(s.secretary || 'सचिव')}</b><br><br>_________________<br>सचिव</div>
+    <div><img src="assets/samiti_logo.png" onerror="this.onerror=null;this.style.display='none';" style="width:45px;height:45px;border-radius:50%;opacity:.7"><br><b>${safe(s.president || 'अध्यक्ष')}</b><br>_________________<br>अध्यक्ष</div>
+    <div><b>${safe(s.treasurer || 'कोषाध्यक्ष')}</b><br><br>_________________<br>कोषाध्यक्ष</div>
+   </div>
+  </div>
+ </div>`;
+
+ openModal('आभार एवं प्रशंसा पत्र', `
+  <div class="no-print" style="display:flex;gap:8px;justify-content:flex-end;margin-bottom:12px;flex-wrap:wrap">
+   <button class="success" onclick="downloadCertImage('${d.id}')">📥 प्रमाणपत्र पम्पलेट/PNG डाउनलोड करें</button>
+   <button onclick="window.print()">🖨 A4 प्रिंट / PDF डाउनलोड</button>
+   <button class="secondary" style="background:#25D366;color:#fff" onclick="shareCertWhatsApp('${d.id}')">📱 व्हाट्सएप शेयर</button>
+   <button class="secondary" onclick="closeModal()">बंद करें</button>
+  </div>
+  <div id="certStatusMsg" style="text-align:center;font-size:12px;margin-bottom:6px"></div>
+  ${certHtml}
+ `);
+}
+
+// BULLETPROOF NATIVE SAVE & SHARE ENGINE FOR ANDROID
+async function saveBase64ImageToDevice(dataUrl, filename) {
+ try {
+  const res = await fetch(dataUrl);
+  const blob = await res.blob();
+  const file = new File([blob], filename, { type: 'image/png' });
+
+  if (navigator.canShare && navigator.canShare({ files: [file] })) {
+   await navigator.share({
+    files: [file],
+    title: 'आभार पत्र',
+    text: 'देवी मंदिर निर्माण समिति - आभार प्रमाणपत्र'
+   });
+   return;
+  }
+ } catch(err){
+  console.log("Share API error: ", err);
+ }
+
+ // Fallback: Direct Blob Download Anchor
+ try {
+  const res = await fetch(dataUrl);
+  const blob = await res.blob();
+  const blobUrl = URL.createObjectURL(blob);
+
+  let a = document.createElement('a');
+  a.href = blobUrl;
+  a.download = filename;
+  a.target = '_blank';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  window.open(blobUrl, '_blank');
+ } catch(e){
+  window.open(dataUrl, '_blank');
+ }
+}
+
+// NON-BLOCKING PNG DOWNLOAD ENGINE THAT OPENS HIGH-RES PNG IN SAVE MODAL
+function downloadCertImage(did) {
+ let certEl = document.getElementById('certificate');
+ if (!certEl) return;
+ let statusEl = document.getElementById('certStatusMsg');
+ if (statusEl) statusEl.innerHTML = '<span style="color:#1b6e41;font-weight:bold">⏳ HD प्रमाणपत्र पम्पलेट तैयार किया जा रहा है...</span>';
+
+ setTimeout(() => {
+  html2canvas(certEl, {
+   scale: 2,
+   useCORS: true,
+   allowTaint: true,
+   backgroundColor: '#fffdf8'
+  }).then(canvas => {
+   let dataUrl = canvas.toDataURL('image/png');
+
+   let imgModalBody = `
+    <div style="text-align:center">
+     <p style="font-size:13px;color:#1b6e41;font-weight:bold;margin-top:0">✔ आपका HD आभार पम्पलेट तैयार है!</p>
+     <img src="${dataUrl}" style="width:100%;max-width:520px;border:3px solid #c4922f;border-radius:8px;box-shadow:0 4px 18px rgba(0,0,0,0.25);margin-bottom:14px" alt="आभार पत्र">
+     <div style="display:flex;gap:8px;justify-content:center;flex-wrap:wrap">
+      <button class="success" onclick="saveBase64ImageToDevice('${dataUrl}', 'Aabhar_Patra_${did}.png')">💾 गैलरी / फोन में सेव करें (Save Image)</button>
+      <button class="secondary" style="background:#1b6e41;color:#fff" onclick="window.open('${dataUrl}', '_blank')">🌐 फुल स्क्रीन इमेज देखें</button>
+      <button class="secondary" onclick="closeModal()">बंद करें</button>
+     </div>
+    </div>
+   `;
+   openModal('🏅 HD आभार पत्र डाउनलोड', imgModalBody);
+  }).catch(err => {
+   if (statusEl) statusEl.innerHTML = `<span style="color:#b83226">इमेज निर्माण त्रुटि: ${safe(err.message)}</span>`;
+  });
+ }, 300);
+}
+
+function shareCertWhatsApp(did) {
+ let certList = (db.donations || []);
+ let d = certList.find(x => x.id === did);
+ if (!d) return;
+ let msg = `॥ जय माता दी ॥\n*श्री ${d.name} जी*,\nमंदिर निर्माण समिति (बाघाकोल, बेला बिगहा) आपके द्वारा दिए गए *${money(d.amount)}* के श्रद्धापूर्ण दान हेतु आपका हार्दिक आभार प्रकट करती है।\nरसीद संख्या: ${d.receipt || d.id}\nमां भवानी की कृपा आपके परिवार पर सदैव बनी रहे! 🙏`;
+ window.open(`https://api.whatsapp.com/send?text=${encodeURIComponent(msg)}`, '_blank');
+}
+
+// Triple AI orchestration runs server-side. Never place Groq/Gemini/OpenAI keys in this APK.
+async function callMandirAI(prompt, systemMsg = 'आप मंदिर निर्माण समिति के विनम्र हिंदी AI सलाहकार हैं।') {
+ if (!cloud) throw new Error('Supabase Cloud कनेक्शन उपलब्ध नहीं है।');
+ if (!isAdminSession()) throw new Error('AI वित्तीय सलाहकार केवल अधिकृत एडमिन लॉगिन में उपलब्ध है।');
+ const { data, error } = await cloud.functions.invoke('mandir-ai', { body: {
+  prompt: String(prompt || '').slice(0, 12000),
+  systemMsg: String(systemMsg || '').slice(0, 3000)
+ }});
+ if (error) throw error;
+ if (!data?.answer) throw new Error(data?.error || 'AI से उत्तर प्राप्त नहीं हुआ।');
+ return data.answer;
+}
+
+function aiAnalytics() {
+ let inc = totalVerified(db.donations, 'amount'), out = total(db.expenses, 'amount'), bal = inc - out;
+ let goal = Number(db.settings?.goal || 500000);
+
+ document.getElementById('view').innerHTML = head('🤖 AI एनालिटिक्स & मंदिर सलाहकार', 'Groq Llama / GPT-OSS AI इंजनों द्वारा संचालित मंदिर निर्माण विश्लेषक व सलाहकार।') +
+ `<div class="ai-card">
+   <h2>🤖 AI मंदिर निर्माण विश्लेषक (Smart AI Advisor)</h2>
+   <p style="font-size:13px;opacity:.9;margin:0 0 14px">यह AI मंदिर निर्माण की प्रगति, योजनाओं एवं दानदाताओं हेतु सुन्दर संदेश तैयार करने में मार्गदर्शन करता है।</p>
+   <button class="success" onclick="generateAIReport()">📊 संपूर्ण AI रिपोर्ट व रणनीति जनरेट करें</button>
+  </div>
+
+  <div class="panel" id="aiReportBox" style="display:none;margin-bottom:18px">
+   <h3 style="color:#b85c16">📊 AI विश्लेषण रिपोर्ट</h3>
+   <div id="aiReportContent" style="font-size:13.5px;line-height:1.7;white-space:pre-wrap;color:#33291d"></div>
+  </div>
+
+  <div class="panel">
+   <h3>💬 AI मंदिर सहायक (Ask AI Assistant)</h3>
+   <p class="muted" style="font-size:12px;margin:0 0 10px">मंदिर निर्माण, योजना या धन्यवाद संदेश से जुड़ा कोई भी प्रश्न पूछें:</p>
+
+   <div class="ai-chat-box" id="aiChatBox">
+    <div class="chat-msg ai">प्रणाम 🙏 मैं मंदिर निर्माण समिति का AI सहायक हूँ। आप मुझसे मंदिर बजट, ढलाई कार्य या दानदाताओं हेतु संदेश लिखने से जुड़ा सवाल पूछ सकते हैं।</div>
+   </div>
+
+   <div style="display:flex;gap:8px;margin-top:10px">
+    <input id="aiUserPrompt" placeholder="उदाहरण: दानदाताओं को भेजने हेतु सुंदर हिंदी धन्यवाद संदेश लिखो..." onkeypress="if(event.key==='Enter')sendAIChat()">
+    <button onclick="sendAIChat()">पूछें ➔</button>
+   </div>
+  </div>`;
+}
+
+async function generateAIReport() {
+ let reportBox = document.getElementById('aiReportBox');
+ let reportContent = document.getElementById('aiReportContent');
+ reportBox.style.display = 'block';
+ reportContent.innerHTML = '<i>🔄 AI द्वारा मंदिर निर्माण प्रगति की रिपोर्ट तैयार की जा रही है...</i>';
+
+ let inc = totalVerified(db.donations, 'amount'), out = total(db.expenses, 'amount'), bal = inc - out;
+ let goal = Number(db.settings?.goal || 500000);
+ let count = (db.donations || []).filter(d => d.verified && !d.rejected).length;
+ let worksStr = (db.works || []).map(w => `${w.name} (${w.progress}% - ${w.status})`).join(', ');
+
+ let prompt = `
+मंदिर का नाम: ${db.settings?.temple || 'मंदिर निर्माण समिति'}
+स्थान: ${db.settings?.place || 'बाघाकोल (बेला बिगहा)'}
+कुल प्राप्त चंदा: ₹${inc} (${count} सत्यापित दानदाता)
+कुल निर्माण व्यय: ₹${out}
+वर्तमान शेष बैलेंस: ₹${bal}
+कुल निर्माण लक्ष्य: ₹${goal}
+चल रहे निर्माण कार्य: ${worksStr || 'कोई नहीं'}
+
+कृपया समिति के लिए 4 मुख्य बिंदुओं में सुंदर हिंदी में विश्लेषण रिपोर्ट तैयार करें:
+1. वित्तीय स्थिति एवं स्वास्थ्य स्कोर (Financial Health)
+2. निर्माण कार्य की गति और ध्यान देने योग्य बातें
+3. फंड (चंदा) बढ़ाने के लिए 3 व्यावहारिक सुझाव
+4. समिति पदाधिकारियों व श्रद्धालुओं के लिए एक प्रेरणादायक संदेश।
+ `;
+
+ try {
+  let aiRes = await callMandirAI(prompt, "आप मंदिर निर्माण समिति के सबसे कुशल एवं सम्माननीय हिंदी वित्तीय सलाहकार AI हैं।");
+  reportContent.textContent = aiRes;
+ } catch (err) {
+  reportContent.innerHTML = `<span style="color:#b83226">त्रुटि: ${safe(err.message)}</span>`;
+ }
+}
+
+async function sendAIChat() {
+ let promptInput = document.getElementById('aiUserPrompt');
+ let text = promptInput.value.trim();
+ if (!text) return;
+
+ let chatBox = document.getElementById('aiChatBox');
+ chatBox.innerHTML += `<div class="chat-msg user">${safe(text)}</div>`;
+ promptInput.value = '';
+ chatBox.scrollTop = chatBox.scrollHeight;
+
+ let loadingId = 'ai-loading-' + Date.now();
+ chatBox.innerHTML += `<div class="chat-msg ai" id="${loadingId}"><i>सोच रहा है... 🔄</i></div>`;
+ chatBox.scrollTop = chatBox.scrollHeight;
+
+ try {
+  let aiRes = await callMandirAI(text);
+  document.getElementById(loadingId).textContent = aiRes;
+ } catch (err) {
+  document.getElementById(loadingId).innerHTML = `<span style="color:#b83226">AI उत्तर त्रुटि: ${safe(err.message)}</span>`;
+ }
+ chatBox.scrollTop = chatBox.scrollHeight;
+}
+
+function reports() {
+ const inc = totalVerified(db.donations, 'amount');
+ const out = total(db.expenses, 'amount');
+ if (isPublicMode) {
+  document.getElementById('view').innerHTML = head('सार्वजनिक पारदर्शिता रिपोर्ट', 'केवल सार्वजनिक रूप से स्वीकृत दान और खर्च का सारांश।') +
+   `<div class="grid">${stat('प्रकाशित सत्यापित दान', money(inc), (db.donations || []).length + ' सार्वजनिक रिकॉर्ड', '🙏')}${stat('प्रकाशित खर्च', money(out), (db.expenses || []).length + ' सार्वजनिक रिकॉर्ड', '₹')}${stat('प्रकाशित शेष', money(inc - out), 'केवल प्रकाशित रिकॉर्ड से गणना', '💰')}</div>` +
+   `<div class="panel"><p class="muted">यह पूर्ण आंतरिक लेखा-बही नहीं है। निजी और अप्रकाशित रिकॉर्ड इस सार्वजनिक रिपोर्ट में शामिल नहीं हैं।</p></div>`;
+  return;
+ }
+ document.getElementById('view').innerHTML = head('रिपोर्ट एवं बैकअप', 'आंतरिक वित्तीय रिपोर्ट व सुरक्षित Admin बैकअप।') +
+ `<div class="grid">${stat('कुल जमा चंदा', money(inc), (db.donations || []).filter(d=>d.verified && !d.rejected).length + ' सत्यापित दान रिकॉर्ड', '🙏')}${stat('कुल व्यय', money(out), (db.expenses || []).length + ' खर्च रिकॉर्ड', '₹')}${stat('उपलब्ध बैलेंस', money(inc - out), 'प्राप्ति − व्यय', '💰')}${stat('निर्माण चरण', (db.works || []).length, 'कार्य स्थिति', '🏗')}</div>
+  <div class="sectiongrid"><div class="panel"><h3>डेटा एक्सपोर्ट</h3><p class="muted">Admin-only CSV और JSON Backup.</p><div style="display:flex;gap:8px;flex-wrap:wrap"><button onclick="exportCSV('donations')">दान CSV</button><button onclick="exportCSV('expenses')">खर्च CSV</button><button onclick="exportJSON()">पूरा बैकअप JSON</button></div></div><div class="panel"><h3>बैकअप रीस्टोर</h3><p class="muted">केवल अधिकृत Admin.</p><input type="file" id="backupFile" accept=".json"><button style="margin-top:10px" onclick="importJSON()">बैकअप रीस्टोर करें</button></div></div>`;
+}
+
+function exportJSON() {
+ if (!requireAdminAction()) return;
+ download('devi-mandir-backup-' + today() + '.json', JSON.stringify(db, null, 2), 'application/json');
+}
+function exportCSV(kind) {
+ if (!requireAdminAction()) return;
+ if (!['donations', 'expenses'].includes(kind)) return alert('अमान्य Export प्रकार।');
+ let arr = db[kind] || [], keys = kind === 'donations' ? ['receipt', 'name', 'amount', 'address', 'phone', 'date', 'method', 'ref', 'note'] : ['date', 'description', 'amount', 'category', 'paidTo', 'method', 'voucher', 'note'];
+ let csv = [keys.join(','), ...arr.map(o => keys.map(k => '"' + String(o[k] ?? '').replace(/"/g, '""') + '"').join(','))].join('\n');
+ download(kind + '-' + today() + '.csv', '\ufeff' + csv, 'text/csv;charset=utf-8');
+}
+async function importJSON() {
+ if (!requireAdminAction()) return;
+ const input = document.getElementById('backupFile');
+ const file = input?.files?.[0];
+ if (!file) return alert('पहले JSON बैकअप फाइल चुनें।');
+ if (file.size > 10 * 1024 * 1024) return alert('बैकअप फाइल 10 MB से बड़ी है।');
+ try {
+  const parsed = JSON.parse(await file.text());
+  if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) throw new Error('JSON object अपेक्षित है।');
+  const allowedArrays = ['donations','expenses','works','members','meetings','certificates','notices'];
+  for (const key of allowedArrays) if (parsed[key] !== undefined && !Array.isArray(parsed[key])) throw new Error(`'${key}' सूची होना चाहिए।`);
+  if (parsed.settings !== undefined && (typeof parsed.settings !== 'object' || parsed.settings === null || Array.isArray(parsed.settings))) throw new Error('settings object अमान्य है।');
+  if (!confirm('यह बैकअप मौजूदा Admin डेटा को बदल देगा। क्या आप जारी रखना चाहते हैं?')) return;
+  const previous = db;
+  db = { ...emptyDb(), ...parsed, settings: { ...emptyDb().settings, ...(parsed.settings || {}) } };
+  if (!await save()) {
+   db = previous;
+   return alert('Cloud Restore पूरा नहीं हुआ। पुराने स्क्रीन डेटा को वापस रखा गया है; Cloud Status जाँचें।');
+  }
+  alert('JSON बैकअप Cloud में Restore हो गया।');
+  page('reports');
+ } catch (e) {
+  alert('बैकअप Restore नहीं हुआ: ' + (e.message || 'अमान्य JSON'));
+ }
+}
+function download(name, data, type) {
+ let a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([data], { type }));
+ a.download = name; a.click(); URL.revokeObjectURL(a.href);
+}
+
+function filterTable(input, tableid) {
+ let q = document.getElementById(input).value.toLowerCase();
+ document.querySelectorAll('#' + tableid + ' tbody tr').forEach(r => r.style.display = r.innerText.toLowerCase().includes(q) ? '' : 'none');
+}
+
+async function del(arr, idv) {
+ if (!requireAdminAction()) return;
+ if (!confirm('क्या आप यह रिकॉर्ड हटाना चाहते हैं?')) return;
+ db[arr] = (db[arr] || []).filter(x => x.id !== idv);
+ if (!await save()) return;
+ page(({ donations: 'donations', expenses: 'expenses', works: 'construction', members: 'committee', meetings: 'meetings' })[arr] || 'dashboard');
+}
+
+function addAdminEmail(e) {
+ if (!requireAdminAction()) return;
+ e.preventDefault();
+ alert('केवल email जोड़ने से Admin अधिकार नहीं मिलते। Supabase Authentication Users में account बनाकर memberships table में role=admin का सुरक्षित provisioning करें।');
+}
+function removeAdminEmail(email) {
+ if (!requireAdminAction()) return;
+ alert('Admin अधिकार Supabase memberships table से Project Owner द्वारा हटाए जाते हैं।');
+}
+
+function settings() {
+ let s = db.settings || {};
+ let isSuperOrAdmin = isAdminSession();
+ let adminListHtml = isSuperOrAdmin ? `<div class="panel" style="max-width:760px;margin-top:18px"><h3>👑 एडमिन अधिकार प्रबंधन</h3><p class="muted">एडमिन अधिकार केवल Supabase Authentication Users में मौजूद User UUID को memberships टेबल में role='admin' देने से मिलते हैं। केवल ईमेल जोड़ने से अधिकार नहीं मिलते। यह कार्रवाई Project Owner द्वारा Database में की जाती है।</p></div>` : '';
+
+ document.getElementById('view').innerHTML = head('मंदिर सेटिंग', 'प्रमाणपत्र व आधिकारिक मंदिर विवरण सेटिंग्स।') +
+ `<div class="panel" style="max-width:760px">
+   <form onsubmit="saveSettings(event)">
+    <div class="fieldgrid">
+     ${field('मंदिर / समिति का आधिकारिक नाम', 'temple', 'text', s.temple, true)}
+     ${field('स्थान / ग्राम', 'place', 'text', s.place, true)}
+     ${field('अनुमानित निर्माण लक्ष्य (₹)', 'goal', 'number', s.goal || '')}
+     ${field('संपर्क नंबर', 'phone', 'tel', s.phone || '')}
+     ${field('अध्यक्ष का नाम', 'president', 'text', s.president || '')}
+     ${field('सचिव का नाम', 'secretary', 'text', s.secretary || '')}
+     ${field('कोषाध्यक्ष का नाम', 'treasurer', 'text', s.treasurer || '')}
+     <div class="field full"><label>पूरा पता</label><textarea name="address">${safe(s.address || '')}</textarea></div>
+    </div>
+    <div class="actions">${!isPublicMode ? '<button>सेटिंग सेव करें</button>' : ''}</div>
+   </form>
+  </div>` + adminListHtml;
+}
+
+async function saveSettings(e) {
+ if (!requireAdminAction()) return;
+ e.preventDefault();
+ let x = Object.fromEntries(new FormData(e.target));
+ x.goal = Number(x.goal || 0);
+ db.settings = { ...db.settings, ...x };
+ if (!await save()) return;
+ alert('मंदिर सेटिंग्स Cloud में सेव हो गईं।'); settings();
+}
+
+initCloud();
+</script>
+</body>
+</html>

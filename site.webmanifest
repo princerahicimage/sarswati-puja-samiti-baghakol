@@ -1,0 +1,15 @@
+{
+  "name": "Sarswati Puja Samiti – Baghakol",
+  "short_name": "Samiti",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#faf7ef",
+  "theme_color": "#182044",
+  "icons": [
+    {
+      "src": "assets/samiti_logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
